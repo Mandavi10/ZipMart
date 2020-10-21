@@ -1,0 +1,9 @@
+.mainContainer{
+    animation-name: anim;
+    animation-duration: 5s;
+    }
+    @keyframes anim {
+        0%   { right:100px; top:0px;}
+        50% { right:0px; top:0px;}
+        100% { right:0px; top:0px;}
+      }

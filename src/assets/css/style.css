@@ -1,0 +1,27 @@
+.mainContainer{padding-top:62px; width: 100%; padding-left:250px}
+.mainFullContainer{padding-left:0}
+span.c-sidebar-nav-icon{margin-top:-10px}
+.help-block{color:#dc4545}
+button{margin-right: 5px !important;}
+.mainContainer{
+    animation-name: anim;
+    animation-duration: 5s;
+    }
+    @keyframes anim {
+        0%   { right:-256px; top:0px;}
+        50% { right:0px; top:0px;}
+        100% { right:0px; top:0px;}
+      }
+      .multiselect-dropdown .dropdown-btn .selected-item {
+        border: 1px solid #0d5f69 !important;
+        background: #0d5f69 !important;
+    
+    }
+    .multiselect-item-checkbox input[type=checkbox]:checked + div:before {
+            background: #0d5f69 !important;
+    }
+    
+    .multiselect-item-checkbox input[type=checkbox] + div:before {
+        color: #0d5f69 !important;        
+        border: 2px solid #0d5f69 !important;
+    }

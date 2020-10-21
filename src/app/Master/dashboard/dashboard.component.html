@@ -1,0 +1,299 @@
+<div class="animated fadeIn mainContainer">
+  <div class="container-fluid">
+ <div class="row">
+
+  <div class="col-lg-12">
+    <div class="card">
+      <div class="card-header">
+        <i class="fa fa-align-justify"></i> Multi Select Dropdown
+      </div>
+      <div class="card-body">
+    <ng-multiselect-dropdown
+    [placeholder]="'custom placeholder'"
+    [data]="dropdownList"
+    [(ngModel)]="selectedItems"
+    [settings]="dropdownSettings"
+    (onSelect)="onItemSelect($event)"
+    (onSelectAll)="onSelectAll($event)"
+  >
+  </ng-multiselect-dropdown>
+  </div>
+</div>
+</div>
+ </div>
+ <div class="row">
+  <div class="col-md-6">
+      <div class="card">
+          <div class="card-header"><strong>Basic Form</strong> Elements</div>
+          <div class="card-body">
+              <form action="" class="form-horizontal ng-untouched ng-pristine ng-valid" enctype="multipart/form-data" method="post" novalidate="">
+                  <div class="form-group row">
+                      <label class="col-md-3 col-form-label">Static</label>
+                      <div class="col-md-9"><p class="form-control-static">Username</p></div>
+                  </div>
+                  <div class="form-group row">
+                      <label class="col-md-3 col-form-label" for="text-input">Text Input</label>
+                      <div class="col-md-9"><input class="form-control" id="text-input" name="text-input" placeholder="Text" type="text" /><span class="help-block">This is a help text</span></div>
+                  </div>
+                  <div class="form-group row">
+                      <label class="col-md-3 col-form-label" for="email-input">Email Input</label>
+                      <div class="col-md-9"><input autocomplete="email" class="form-control" id="email-input" name="email-input" placeholder="Enter Email" type="email" /><span class="help-block">Please enter your email</span></div>
+                  </div>
+                  <div class="form-group row">
+                      <label class="col-md-3 col-form-label" for="password-input">Password</label>
+                      <div class="col-md-9">
+                          <input autocomplete="current-password" class="form-control" id="password-input" name="password-input" placeholder="Password" type="password" /><span class="help-block">Please enter a complex password</span>
+                      </div>
+                  </div>
+                  <div class="form-group row">
+                      <label class="col-md-3 col-form-label" for="date-input">Date Input</label>
+                      <div class="col-md-9"><input class="form-control" id="date-input" name="date-input" placeholder="date" type="date" /><span class="help-block">Please enter a valid date</span></div>
+                  </div>
+                  <div class="form-group row">
+                      <label class="col-md-3 col-form-label" for="disabled-input">Disabled Input</label>
+                      <div class="col-md-9"><input class="form-control" disabled="" id="disabled-input" name="disabled-input" placeholder="Disabled" type="text" /></div>
+                  </div>
+                  <div class="form-group row">
+                      <label class="col-md-3 col-form-label" for="textarea-input">Textarea</label>
+                      <div class="col-md-9"><textarea class="form-control" id="textarea-input" name="textarea-input" placeholder="Content.." rows="9"></textarea></div>
+                  </div>
+                 
+                 
+                  <div class="form-group row">
+                      <label class="col-md-3 col-form-label" for="select3">Select</label>
+                      <div class="col-md-9">
+                          <select class="form-control form-control-sm" id="select3" name="select3">
+                              <option value="0">Please select</option>
+                              <option value="1">Option #1</option>
+                              <option value="2">Option #2</option>
+                              <option value="3">Option #3</option>
+                          </select>
+                      </div>
+                  </div>
+                  <div class="form-group row">
+                      <label class="col-md-3 col-form-label" for="disabledSelect">Disabled Select</label>
+                      <div class="col-md-9">
+                          <select class="form-control" disabled="" id="disabledSelect">
+                              <option value="0">Please select</option>
+                              <option value="1">Option #1</option>
+                              <option value="2">Option #2</option>
+                              <option value="3">Option #3</option>
+                          </select>
+                      </div>
+                  </div>
+               
+                  <div class="form-group row">
+                      <label class="col-md-3 col-form-label">Radios</label>
+                      <div class="col-md-9 col-form-label">
+                          <div class="form-check"><input checked="" class="form-check-input" id="radio1" name="radios" type="radio" value="option1" /><label class="form-check-label" for="radio1"> Option 1 </label></div>
+                          <div class="form-check"><input class="form-check-input" id="radio2" name="radios" type="radio" value="option2" /><label class="form-check-label" for="radio2"> Option 2 </label></div>
+                          <div class="form-check"><input class="form-check-input" id="radio3" name="radios" type="radio" value="option3" /><label class="form-check-label" for="radio3"> Option 3 </label></div>
+                      </div>
+                  </div>
+                  <div class="form-group row">
+                      <label class="col-md-3 col-form-label" for="inline-radios">Inline Radios</label>
+                      <div class="col-md-9 col-form-label">
+                          <div class="form-check form-check-inline mr-1" id="inline-radios">
+                              <input class="form-check-input" id="inlineRadio1" name="inline-radios" type="radio" value="option1" /><label class="form-check-label" for="inlineRadio1">One</label>
+                          </div>
+                          <div class="form-check form-check-inline mr-1">
+                              <input class="form-check-input" id="inlineRadio2" name="inline-radios" type="radio" value="option2" /><label class="form-check-label" for="inlineRadio2">Two</label>
+                          </div>
+                          <div class="form-check form-check-inline mr-1">
+                              <input class="form-check-input" id="inlineRadio3" name="inline-radios" type="radio" value="option3" /><label class="form-check-label" for="inlineRadio3">Three</label>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="form-group row">
+                      <label class="col-md-3 col-form-label">Checkboxes</label>
+                      <div class="col-md-9 col-form-label">
+                          <div class="form-check"><input class="form-check-input" id="checkbox1" type="checkbox" value="option1" /><label class="form-check-label" for="checkbox1"> Option 1 </label></div>
+                          <div class="form-check"><input class="form-check-input" id="checkbox2" type="checkbox" value="option1" /><label class="form-check-label" for="checkbox2"> Option 2 </label></div>
+                          <div class="form-check checkbox"><input class="form-check-input" id="checkbox3" type="checkbox" value="option1" /><label class="form-check-label" for="checkbox3"> Option 3 </label></div>
+                      </div>
+                  </div>
+                  <div class="form-group row">
+                      <label class="col-md-3 col-form-label">Inline Checkboxes</label>
+                      <div class="col-md-9 col-form-label">
+                          <div class="form-check form-check-inline mr-1"><input class="form-check-input" id="inline-checkbox1" type="checkbox" value="option1" /><label class="form-check-label" for="inline-checkbox1">One</label></div>
+                          <div class="form-check form-check-inline mr-1"><input class="form-check-input" id="inline-checkbox2" type="checkbox" value="option2" /><label class="form-check-label" for="inline-checkbox2">Two</label></div>
+                          <div class="form-check form-check-inline mr-1"><input class="form-check-input" id="inline-checkbox3" type="checkbox" value="option3" /><label class="form-check-label" for="inline-checkbox3">Three</label></div>
+                      </div>
+                  </div>
+                  <div class="form-group row">
+                      <label class="col-md-3 col-form-label" for="file-input">File input</label>
+                      <div class="col-md-9"><input id="file-input" name="file-input" type="file" /></div>
+                  </div>
+                  <div class="form-group row">
+                      <label class="col-md-3 col-form-label" for="file-multiple-input">Multiple File input</label>
+                      <div class="col-md-9"><input id="file-multiple-input" multiple="" name="file-multiple-input" type="file" /></div>
+                  </div>
+              </form>
+          </div>
+          <div class="card-footer">
+              <button class="btn btn-sm btn-primary" type="submit"><i class="fa fa-dot-circle-o"></i> Submit</button><button class="btn btn-sm btn-danger" type="reset"><i class="fa fa-ban"></i> Reset</button>
+          </div>
+      </div>
+    
+  </div>
+  <div class="col-md-6">
+      <div class="card">
+          <div class="card-header"><strong>Horizontal</strong> Form</div>
+          <div class="card-body">
+              <form action="" class="form-horizontal ng-untouched ng-pristine ng-valid" method="post" novalidate="">
+                  <div class="form-group row">
+                      <label class="col-md-3 col-form-label" for="hf-email">Email</label>
+                      <div class="col-md-9"><input autocomplete="email" class="form-control" id="hf-email" name="hf-email" placeholder="Enter Email.." type="email" /><span class="help-block">Please enter your email</span></div>
+                  </div>
+                  <div class="form-group row">
+                      <label class="col-md-3 col-form-label" for="hf-password">Password</label>
+                      <div class="col-md-9">
+                          <input autocomplete="current-password" class="form-control" id="hf-password" name="hf-password" placeholder="Enter Password.." type="password" /><span class="help-block">Please enter your password</span>
+                      </div>
+                  </div>
+              </form>
+          </div>
+          <div class="card-footer">
+              <button class="btn btn-sm btn-primary" type="submit"><i class="fa fa-dot-circle-o"></i> Submit</button><button class="btn btn-sm btn-danger" type="reset"><i class="fa fa-ban"></i> Reset</button>
+          </div>
+      </div>
+      <div class="card">
+          <div class="card-header"><strong>Normal</strong> Form</div>
+          <div class="card-body">
+              <form action="" method="post" novalidate="" class="ng-untouched ng-pristine ng-valid">
+                  <div class="form-group">
+                      <label for="nf-email">Email</label><input autocomplete="email" class="form-control" id="nf-email" name="nf-email" placeholder="Enter Email.." type="email" /><span class="help-block">Please enter your email</span>
+                  </div>
+                  <div class="form-group">
+                      <label for="nf-password">Password</label><input autocomplete="current-password" class="form-control" id="nf-password" name="nf-password" placeholder="Enter Password.." type="password" />
+                      <span class="help-block">Please enter your password</span>
+                  </div>
+              </form>
+          </div>
+          <div class="card-footer">
+              <button class="btn btn-sm btn-primary" type="submit"><i class="fa fa-dot-circle-o"></i> Submit</button><button class="btn btn-sm btn-danger" type="reset"><i class="fa fa-ban"></i> Reset</button>
+          </div>
+      </div>
+      
+      <div class="card">
+          <div class="card-header">Input <strong>Sizes</strong></div>
+          <div class="card-body">
+              <form action="" class="form-horizontal ng-untouched ng-pristine ng-valid" method="post" novalidate="">
+                  <div class="form-group row">
+                      <label class="col-sm-5 col-form-label" for="input-small">Small Input</label>
+                      <div class="col-sm-6"><input class="form-control form-control-sm" id="input-small" name="input-small" placeholder=".form-control-sm" type="text" /></div>
+                  </div>
+                  <div class="form-group row">
+                      <label class="col-sm-5 col-form-label" for="input-normal">Normal Input</label>
+                      <div class="col-sm-6"><input class="form-control" id="input-normal" name="input-normal" placeholder="Normal" type="text" /></div>
+                  </div>
+                  <div class="form-group row">
+                      <label class="col-sm-5 col-form-label" for="input-large">Large Input</label>
+                      <div class="col-sm-6"><input class="form-control form-control-lg" id="input-large" name="input-large" placeholder=".form-control-lg" type="text" /></div>
+                  </div>
+              </form>
+          </div>
+          <div class="card-footer">
+              <button class="btn btn-sm btn-primary" type="submit"><i class="fa fa-dot-circle-o"></i> Submit</button><button class="btn btn-sm btn-danger" type="reset"><i class="fa fa-ban"></i> Reset</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-header">
+          <i class="fa fa-align-justify"></i> Condensed Table
+        </div>
+        <div class="card-body">
+          <table class="table table-sm">
+            <thead>
+              <tr>
+                <th>Username</th>
+                <th>Date registered</th>
+                <th>Role</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Carwyn Fachtna</td>
+                <td>2012/01/01</td>
+                <td>Member</td>
+                <td>
+                  <span class="badge badge-success">Active</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Nehemiah Tatius</td>
+                <td>2012/02/01</td>
+                <td>Staff</td>
+                <td>
+                  <span class="badge badge-danger">Banned</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Ebbe Gemariah</td>
+                <td>2012/02/01</td>
+                <td>Admin</td>
+                <td>
+                  <span class="badge badge-secondary">Inactive</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Eustorgios Amulius</td>
+                <td>2012/03/01</td>
+                <td>Member</td>
+                <td>
+                  <span class="badge badge-warning">Pending</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Leopold Gáspár</td>
+                <td>2012/01/21</td>
+                <td>Staff</td>
+                <td>
+                  <span class="badge badge-success">Active</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Prev</a></li>
+            <li class="page-item active">
+              <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-12">
+          <div class="card">
+            <div class="card-header">
+              <i class="fa fa-align-justify"></i> AG Grid
+            </div>
+            <div class="card-body">
+        
+          <ag-grid-angular
+          style="width: 100%; height: 490px;"
+          class="ag-theme-alpine"
+          [rowData]="rowData"
+          [columnDefs]="columnDefs"
+          
+            [pagination]="true"
+            >
+      </ag-grid-angular>
+        </div>
+      </div>
+    </div>
+  </div>
+      </div>
+      </div>
+    </div>
+    
+  </div>
+ 
