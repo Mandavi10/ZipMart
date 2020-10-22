@@ -7,6 +7,11 @@ import Swal from 'sweetalert2/dist/sweetalert2.js';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
+  public start: Date = new Date ("10/07/2017"); 
+  public end: Date = new Date ("11/25/2017");
+  public minDate: Date = new Date ("05/07/2017");
+  public maxDate: Date = new Date ("05/27/2017");
+  public dateValue: Date = new Date ("05/16/2017");
   name = 'Angular';
   simpleAlert(){
     Swal.fire('Hello world!');

@@ -17,6 +17,9 @@
     (onSelectAll)="onSelectAll($event)"
   >
   </ng-multiselect-dropdown>
+  <ejs-datepicker id='datepicker' placeholder='Select a date' [value]='dateValue' [min]='minDate' [max]='maxDate'></ejs-datepicker>
+
+  <ejs-daterangepicker id='daterangepicker' placeholder='Select a range' [startDate]='start' [endDate]='end'></ejs-daterangepicker>
   </div>
 </div>
 </div>
@@ -153,6 +156,42 @@
                           <input autocomplete="current-password" class="form-control" id="hf-password" name="hf-password" placeholder="Enter Password.." type="password" /><span class="help-block">Please enter your password</span>
                       </div>
                   </div>
+                  <ejs-accordion>
+                    <e-accordionitems>
+                      <e-accordionitem expanded='true'>
+                        <ng-template #header>
+                          <div>ASP.NET</div>
+                        </ng-template>
+                        <ng-template #content>
+                          <div>Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications
+                            and XML Web services.
+                          </div>
+                        </ng-template>
+                      </e-accordionitem>
+                      <e-accordionitem>
+                        <ng-template #header>
+                          <div>ASP.NET MVC</div>
+                        </ng-template>
+                        <ng-template #content>
+                          <div>The Model-View-Controller (MVC) architectural pattern separates an application into three main components:
+                            the model, the view, and the controller.
+                          </div>
+                        </ng-template>
+                      </e-accordionitem>
+                      <e-accordionitem>
+                        <ng-template #header>
+                          <div>JavaScript</div>
+                        </ng-template>
+                        <ng-template #content>
+                          <div>JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of
+                            web browsers so that client-side scripts could interact with the user, control the browser, communicate
+                            asynchronously, and
+                            alter the document content that was displayed.
+                          </div>
+                        </ng-template>
+                      </e-accordionitem>
+                    </e-accordionitems>
+                  </ejs-accordion>
               </form>
           </div>
           <div class="card-footer">
