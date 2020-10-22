@@ -3,7 +3,7 @@
 span.c-sidebar-nav-icon{margin-top:-10px}
 .help-block{color:#dc4545}
 button{margin-right: 5px !important;}
-.mainContainer{
+.main{
     animation-name: anim;
     animation-duration: 5s;
     }
@@ -53,7 +53,9 @@ button{margin-right: 5px !important;}
     article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
         display: block;
     }
-
+    html:not([dir=rtl]) .c-sidebar:not(.c-sidebar-lg-show)> .main{
+        margin-left: 0px !important;
+    }
 @media (min-width: 992px){
 html:not([dir=rtl]) .sidebar-lg-show.sidebar-fixed.sidebar-minimized .app-footer, html:not([dir=rtl]) .sidebar-lg-show.sidebar-fixed.sidebar-minimized .main, html:not([dir=rtl]) .sidebar-show.sidebar-fixed.sidebar-minimized .app-footer, html:not([dir=rtl]) .sidebar-show.sidebar-fixed.sidebar-minimized .main {
     margin-left: 50px;
