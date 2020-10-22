@@ -25,3 +25,46 @@ button{margin-right: 5px !important;}
         color: #0d5f69 !important;        
         border: 2px solid #0d5f69 !important;
     }
+    article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+        display: block;
+    }
+ .main{margin-left: 260px  !important; padding-top: 60px; overflow:hidden; -ms-flex: 1;
+    flex: 1;
+    min-width: 0;}
+ .sidebar-fixed.sidebar-hidden .main, .sidebar-fixed.sidebar-hidden .app-footer {
+    margin-left: 0;
+}
+
+.app-footer, .app-header, .aside-menu, .main, .sidebar {
+    transition: margin-left .25s,margin-right .25s,width .25s,flex .25s,-ms-flex .25s;
+}
+    .fadeIn {
+        -webkit-animation-name: fadeIn;
+        animation-name: fadeIn;
+    }
+    .animated {
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+    }
+    .app-footer, .app-header, .aside-menu, .main, .sidebar {
+        transition: margin-left .25s,margin-right .25s,width .25s,flex .25s;
+        transition: margin-left .25s,margin-right .25s,width .25s,flex .25s,-ms-flex .25s;
+    }
+    article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+        display: block;
+    }
+
+@media (min-width: 992px){
+html:not([dir=rtl]) .sidebar-lg-show.sidebar-fixed.sidebar-minimized .app-footer, html:not([dir=rtl]) .sidebar-lg-show.sidebar-fixed.sidebar-minimized .main, html:not([dir=rtl]) .sidebar-show.sidebar-fixed.sidebar-minimized .app-footer, html:not([dir=rtl]) .sidebar-show.sidebar-fixed.sidebar-minimized .main {
+    margin-left: 50px;
+}
+}
+@media (min-width: 992px){
+html:not([dir=rtl]) .sidebar-lg-show.sidebar-fixed .app-footer, html:not([dir=rtl]) .sidebar-lg-show.sidebar-fixed .main, html:not([dir=rtl]) .sidebar-show.sidebar-fixed .app-footer, html:not([dir=rtl]) .sidebar-show.sidebar-fixed .main {
+    margin-left: 200px;
+}}
+
+
+
+
+

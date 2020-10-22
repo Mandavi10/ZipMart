@@ -1,5 +1,8 @@
 
 <app-header></app-header>
-<app-sidebar ></app-sidebar>
+<app-sidebar *ngIf="showSideNav" class="sidebar" ></app-sidebar>
+<app-sidebar-minimizer (click)=toggleNav() style="display: none;"></app-sidebar-minimizer>
+
 <router-outlet></router-outlet>
- <app-footer></app-footer> 
+
+ <app-footer ></app-footer> 
