@@ -139,6 +139,9 @@
               <button class="btn btn-sm btn-primary" type="submit"><i class="fa fa-dot-circle-o"></i> Submit</button><button class="btn btn-sm btn-danger" type="reset"><i class="fa fa-ban"></i> Reset</button>
               <button class="btn btn-sm btn-success" type="submit" (click)="alertWithSuccess()"><i class="fa fa-floppy-o"></i> Save Data</button>
               <button class="btn btn-sm btn-info" type="reset" (click)="confirmBox()"><i class="fa fa-floppy-o"></i> Confirm Save</button>
+              <button type="button" class="btn btn-primary  btn-sm" data-toggle="modal" data-target="#exampleModalLong">
+                <i class="fa fa-eye"></i>  Show Grid
+              </button>
           </div>
       </div>
     
@@ -380,4 +383,32 @@
     
   </div>
 </main>
+</div>
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Ag Grid</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="closepop">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       
+        <ag-grid-angular
+        style="width: 100%; height: 200px;"
+        class="ag-theme-alpine"
+        [rowData]="rowData"
+        [columnDefs]="columnDefs"
+        
+          [pagination]="true"
+          >
+    </ag-grid-angular>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
 </div>
