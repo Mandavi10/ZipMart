@@ -7,4 +7,10 @@
         50% { right:0px; top:0px;}
         100% { right:0px; top:0px;}
       }
-      
+      .modal-header{
+        background-color: #357279;
+        color: #fff;
+    } 
+     .closepop{color: #fff;
+      opacity: 1!important
+      ;}
