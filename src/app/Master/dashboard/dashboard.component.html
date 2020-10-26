@@ -1,5 +1,7 @@
 <div class="app-body">
-  <main class="main">
+  <button (click)="changeState()" class="btnAnimate" type="button" data-target="#sidebar" data-class="c-sidebar-lg-show" responsive="true"></button>
+ 
+  <main class="main mainContainer" [@changeDivSize]=currentState>
 <div class="animated fadeIn ">
  
  <div class="row">
@@ -22,7 +24,8 @@
   <ejs-datepicker id='datepicker' placeholder='Select a date' [value]='dateValue' [min]='minDate' [max]='maxDate'></ejs-datepicker>
 
   <ejs-daterangepicker id='daterangepicker' placeholder='Select a range' [startDate]='start' [endDate]='end'></ejs-daterangepicker>
-  </div>
+  
+</div>
 </div>
 </div>
  </div>

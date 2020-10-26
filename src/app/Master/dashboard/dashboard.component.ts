@@ -1,10 +1,26 @@
 import { Component, OnInit } from '@angular/core';
 import { IDropdownSettings } from 'ng-multiselect-dropdown';
 import Swal from 'sweetalert2/dist/sweetalert2.js';
+import { trigger, state, style, animate, transition } from '@angular/animations';
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.css']
+  styleUrls: ['./dashboard.component.css'],
+  animations: [
+    trigger('changeDivSize', [
+      state('initial', style({
+        width: '80%',
+        height: '100%'
+      })),
+      state('final', style({
+        width: '100%',
+        height: '100%',
+        position: 'absolute'
+      })),
+      transition('initial=>final', animate('500ms')),
+      transition('final=>initial', animate('500ms'))
+    ]),
+  ]
 })
 export class DashboardComponent implements OnInit {
   public start: Date = new Date ("10/07/2017"); 
@@ -12,8 +28,12 @@ export class DashboardComponent implements OnInit {
   public minDate: Date = new Date ("05/07/2017");
   public maxDate: Date = new Date ("05/27/2017");
   public dateValue: Date = new Date ("05/16/2017");
+
+  currentState = 'initial';
+
   public headerText: Object = [{ text: "Twitter", 'iconCss': 'e-twitter' },
   { text: "Facebook", 'iconCss': 'e-facebook' }, { text: "WhatsApp", 'iconCss': 'e-whatsapp' }];
+
   name = 'Angular';
   simpleAlert(){
     Swal.fire('Hello world!');
@@ -79,6 +99,7 @@ rowData = [
     { srNo: '4',  UMRN: '3246', CorporateName:'RBL', CustomerName: 'Abhishek', Refrence: '6546', Amount: '6546', FromDate: '01-10-2020', ToDate: '02-10-2020', DebitType: 'Demo', CreatedOn: '01-10-2020', RecordType: 'Demo', Status: 'Demo', RejectReason: 'Demo'},
    
 ];
+
   constructor() { }
 
   ngOnInit() {
@@ -108,6 +129,9 @@ rowData = [
   }
   onSelectAll(items: any) {
     console.log(items);
+  }
+  changeState() {
+    this.currentState = this.currentState === 'initial' ? 'final' : 'initial';
   }
   }
 

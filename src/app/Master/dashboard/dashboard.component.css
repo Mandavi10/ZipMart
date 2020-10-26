@@ -1,16 +1,7 @@
-.mainContainer{
-    animation-name: anim;
-    animation-duration: 5s;
-    }
-    @keyframes anim {
-        0%   { right:100px; top:0px;}
-        50% { right:0px; top:0px;}
-        100% { right:0px; top:0px;}
-      }
-      .modal-header{
-        background-color: #357279;
-        color: #fff;
-    } 
-     .closepop{color: #fff;
-      opacity: 1!important
-      ;}
+.btnAnimate{     position: absolute;
+  z-index: 9999;
+  left: 231px;
+  top: 8px;
+  height: 46px;
+  width: 38px;
+  opacity: 0;}
