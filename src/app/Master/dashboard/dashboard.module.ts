@@ -8,6 +8,7 @@ import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
 import { DateRangePickerModule } from '@syncfusion/ej2-angular-calendars';
 import { DatePickerModule } from '@syncfusion/ej2-angular-calendars';
 import { AccordionModule } from '@syncfusion/ej2-angular-navigations';
+import { TabAllModule } from '@syncfusion/ej2-angular-navigations';
 @NgModule({
   declarations: [DashboardComponent],
   imports: [
@@ -16,6 +17,7 @@ import { AccordionModule } from '@syncfusion/ej2-angular-navigations';
     DatePickerModule,
     DashboardRoutingModule,
     AccordionModule,
+    TabAllModule,
     AgGridModule.withComponents([]),
     NgMultiSelectDropDownModule.forRoot(),
     FormsModule
