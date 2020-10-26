@@ -8,7 +8,7 @@ import { AgGridModule } from 'ag-grid-angular';
 import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
 import { LoginComponent } from './login/login.component';
 import { LayOutModule } from './Master/lay-out.module';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +20,8 @@ import { LayOutModule } from './Master/lay-out.module';
     LayOutModule,
     FormsModule,
     AgGridModule.withComponents([]),
-    NgMultiSelectDropDownModule.forRoot()
+    NgMultiSelectDropDownModule.forRoot(),
+    BrowserAnimationsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
