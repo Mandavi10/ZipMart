@@ -12,6 +12,7 @@ const routes: Routes = [
         component: MainLayoutComponent,
         children: [
 {path: 'Dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule'},
+{path: 'Country', loadChildren: './country/country.module#CountryModule'},
 
         ]
       }
