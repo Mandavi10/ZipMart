@@ -1,7 +1,7 @@
-.btnAnimate{     position: absolute;
+.btnAnimate{ position: absolute;
   z-index: 9999;
-  left: 231px;
-  top: 8px;
-  height: 46px;
-  width: 38px;
+  left: 13rem;
+  top: 0px;
+  height: 55px;
+  width: 61px;
   opacity: 0;}
