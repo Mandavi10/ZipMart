@@ -9,6 +9,7 @@ import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
 import { LoginComponent } from './login/login.component';
 import { LayOutModule } from './Master/lay-out.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
   declarations: [
     AppComponent,

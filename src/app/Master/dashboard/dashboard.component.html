@@ -12,6 +12,8 @@
         <i class="fa fa-align-justify"></i> Multi Select Dropdown
       </div>
       <div class="card-body">
+
+       
     <ng-multiselect-dropdown
     [placeholder]="'custom placeholder'"
     [data]="dropdownList"
@@ -200,7 +202,14 @@
                       </e-accordionitem>
                     </e-accordionitems>
                   </ejs-accordion>
-
+<div class="col-md-12">
+  <div class="row">
+  <label class="col-md-3">Touch Me</label>
+  <div class="col-md-9">
+                  <ejs-switch [checked]="true"></ejs-switch>
+                </div>
+                </div>
+              </div>
                   <div class="control-section e-tab-section">
                     <div class="e-sample-resize-container">
                         <!-- Render the Tab Component -->
@@ -238,6 +247,7 @@
                             </ejs-tab>
                     </div>
                 </div>
+              
               </form>
           </div>
           <div class="card-footer">
