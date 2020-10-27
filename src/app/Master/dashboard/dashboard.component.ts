@@ -12,6 +12,7 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
         width: '80%',
         height: '100%'
       })),
+      
       state('final', style({
         width: '100%',
         height: '100%',
