@@ -3,127 +3,101 @@
  
   <main class="mainContainer" [@changeDivSize]=currentState>
 <div class="animated fadeIn ">
+ 
+
   <div class="row">
-
-
     <div class="col-lg-12">
       <div class="card">
-        <div class="col-lg-12">
-          <div class="card">
-            <div class="card-header">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                <span class="spanlbl">City</span>
-                
-                      </div>
-                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                          <ul class="toolbar-content">
-                              <li>
-                                  <button class="btn btn-sm btn-primary" type="submit">
-                                    <i class="fa fa-file-excel-o"></i> Export to Excel</button>
-                              </li>
-                              <li data-toggle="modal" data-target="#exampleModalLong">
-                                  <button class="btn btn-sm btn-primary" type="submit">
-                                      <i class="fa fa-plus"></i> New</button>
-                                </li>
-                          </ul>
-                
-                        </div>
-                
-                </div>
-            </div>
-            <div class="card-body">
-        
-          <ag-grid-angular
-          style="width: 100%; height: 387px;"
-          class="ag-theme-alpine"
-          [rowData]="bindgrid"
-          [columnDefs]="columnDefs"
-            >
-      </ag-grid-angular>
-      <ul class="pagination">
-        <li class="page-item"><a class="page-link" href="#">Prev</a></li>
-        <li class="page-item active">
-          <a class="page-link" href="#">1</a>
-        </li>
-        <li class="page-item"><a class="page-link" href="#">2</a></li>
-        <li class="page-item"><a class="page-link" href="#">3</a></li>
-        <li class="page-item"><a class="page-link" href="#">4</a></li>
-        <li class="page-item"><a class="page-link" href="#">Next</a></li>
-      </ul>
+        <div class="card-header">
+          <div class="row">
+            
+          <div class="col-md-6 heading"> City Master</div>
+          <div class="col-md-6">
+            <div class="btnCon">
+            <button class="btn btn-sm btn-primary" type="button" data-toggle="modal" data-target="#testForm"><i class="fa fa-plus pr-1"></i>New</button>
+          </div>
         </div>
-      </div>
-    </div>
+          </div>
+        </div>
+        <div class="card-body">
+    
+      <ag-grid-angular
+      style="width: 100%; height: 410px;"
+      class="ag-theme-alpine"
+      [rowData]="bindgrid"
+      [columnDefs]="columnDefs">
+  </ag-grid-angular>
 
-  
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#">Prev</a></li>
+    <li class="page-item active">
+      <a class="page-link" href="#">1</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">4</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+    </div>
+    
   </div>
-      </div>
+</div>
       </div>
   
     
   </div>
+ 
 </main>
 </div>
-<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-lg popupposition" role="document">
+
+<div class="modal right fade" id="testForm" tabindex="-1" role="dialog" aria-labelledby="testForm">
+  <div class="modal-dialog modal-dialog-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">City</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Create City</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true" class="closepop">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
-       
-        <div class="row">
-          <div class="col-md-12">
-              <div class="card">
-                  
-                  <div class="card-body">
-                      <form action="" class="form-horizontal ng-untouched ng-pristine ng-valid" enctype="multipart/form-data" method="post" novalidate="">
-                         
-                          <div class="form-group row">
-                            <label class="col-md-4 col-form-label p-0" for="text-input">City Code</label>
-                            <div class="col-md-8"><input class="form-control" id="text-input" name="text-input" placeholder="Text" type="text" /><span class="help-block" style="display:none;">This is a help text</span></div>
-                        </div>
-        
-                          <div class="form-group row">
-                              <label class="col-md-4 col-form-label p-0" for="text-input"> City Name</label>
-                              <div class="col-md-8"><input class="form-control" id="text-input" name="text-input" placeholder="Text" type="text" /><span class="help-block" style="display:none;">This is a help text</span></div>
-                          </div>
-                          <div class="form-group row">
-                            <label class="col-md-4 col-form-label p-0" for="text-input">   Country</label>
-                            <div class="col-md-8"><select class="form-control" id="text-input" name="text-input" placeholder="Text" type="text" >
-
-                                <option>Select</option>
-                                                                <option>India</option>
-                                                               
-                            </select><span class="help-block" style="display:none;">This is a help text</span></div>
-                        </div>
-                      
-                      <div class="form-group row">
-                        <label class="col-md-4 col-form-label p-0" for="text-input">State</label>
-                        <div class="col-md-8"><select class="form-control" id="text-input" name="text-input" placeholder="Text" type="text" >
-
-                          <option>Select</option>
-                                                          <option>Up</option>
-                                                         
-                      </select><span class="help-block" style="display:none;">This is a help text</span></div>
-                  </div>
-                        
-                      </form>
-                  </div>
-                
+      <div class="card">
+        <!-- <div class="card-header"><strong>Basic Form</strong> Elements</div> -->
+        <div class="card-body">
+            <form action="" class="form-horizontal ng-untouched ng-pristine ng-valid" enctype="multipart/form-data" method="post" novalidate="">
+              
+                <div class="form-group row">
+                    <label class="col-md-3 col-form-label" for="text-input">City Code</label>
+                    <div class="col-md-9"><input class="form-control" id="text-input" name="text-input" placeholder="" type="text" /></div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-md-3 col-form-label" for="text-input"> City Name</label>
+                  <div class="col-md-9"><input class="form-control" id="text-input" name="text-input" placeholder="" type="text" /></div>
               </div>
-            
+              <div class="form-group row">
+                <label class="col-md-3 col-form-label" for="text-input"> Country</label>
+                <div class="col-md-9"><select class="form-control" id="text-input" name="text-input" placeholder="Text" type="text" >
+                  <option>Select</option>
+                  <option>India</option>
+                </select></div>
+            </div>
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="text-input">State</label>
+              <div class="col-md-9"><select class="form-control" id="text-input" name="text-input" placeholder="Text" type="text" >
+                <option>Select</option>
+                <option>Up</option>
+              </select></div>
           </div>
-          
+               
+               
+             
+              
+            </form>
         </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Submit</button>
-      </div>
+        <div class="card-footer footerclass">
+             <button class="btn btn-sm btn-primary pull-right" type="submit" (click)="alertWithSuccess()"><i class="fa fa-floppy-o"></i> Save</button>
+            
+        </div>
+    </div>
+     
     </div>
   </div>
 </div>

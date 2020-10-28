@@ -1,11 +1,35 @@
 import { Component, OnInit } from '@angular/core';
-
+import { trigger, state, style, animate, transition } from '@angular/animations';
+import Swal from 'sweetalert2/dist/sweetalert2.js';
 @Component({
   selector: 'app-city',
   templateUrl: './city.component.html',
-  styleUrls: ['./city.component.css']
+  styleUrls: ['./city.component.css'],
+  animations: [
+    trigger('changeDivSize', [
+      state('initial', style({
+        width: '',
+        height: '100%'
+      })),
+      
+      state('final', style({
+        width: '100%',
+        height: '100%',
+        position: 'absolute'
+      })),
+      transition('initial=>final', animate('500ms')),
+      transition('final=>initial', animate('500ms'))
+    ]),
+    
+  ]
 })
+
+
 export class CityComponent implements OnInit {
+  name = 'Angular';
+  alertWithSuccess(){
+    Swal.fire('Saved Successfully', '', 'success')
+  }
 
   columnDefs = [
     {headerName: 'Sr. No.', field: 'Srno' ,valueGetter: "node.rowIndex + 1", width: 80 },
