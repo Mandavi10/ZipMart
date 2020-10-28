@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
+import Swal from 'sweetalert2/dist/sweetalert2.js';
 @Component({
   selector: 'app-state',
   templateUrl: './state.component.html',
@@ -24,6 +25,11 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 })
 export class StateComponent implements OnInit {
   currentState = 'initial';
+  name = 'Angular';
+
+  alertWithSuccess(){
+    Swal.fire('Saved Successfully', '', 'success')
+  }
   columnDefs = [
     //{headerName: 'All', field: '', width: 60, headerCheckboxSelection: true, checkboxSelection: true },
     {headerName: 'Sr. No.', field: 'Srno', width: 80 },
