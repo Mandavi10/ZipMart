@@ -12,7 +12,7 @@ const routes: Routes = [
         component: MainLayoutComponent,
         children: [
 {path: 'Dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule'},
-
+{path: 'TestMaster', loadChildren: './test-master/test-master.module#TestMasterModule'},
         ]
       }
 ];

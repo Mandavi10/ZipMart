@@ -1,14 +1,87 @@
 body{overflow-x:hidden}
-.mainContainer{padding-top:62px; width: 83%; float: right; z-index: 1031;
-    position: absolute; right:0}
+.btnAnimate{ position: absolute;
+    z-index: 9999;
+    left: 13rem;
+    top: 0px;
+    height: 55px;
+    width: 61px;
+    opacity: 0;}
+.mainContainer{padding-top:57px; width: 83.7%; z-index: 1031;
+    position: absolute; right:0;}
 .mainFullContainer{padding-left:0}
+.formCon{ position: absolute;
+    top: 0;
+    right: -490px;}
+
+    .modal.left .modal-dialog,
+	.modal.right .modal-dialog {
+		position: fixed;
+		margin: auto;
+		width: 500px;
+		height: 100%;
+		-webkit-transform: translate3d(0%, 0, 0);
+		    -ms-transform: translate3d(0%, 0, 0);
+		     -o-transform: translate3d(0%, 0, 0);
+		        transform: translate3d(0%, 0, 0);
+	}
+
+	.modal.left .modal-content,
+	.modal.right .modal-content {
+		height: 100%;
+		overflow-y: auto;
+	}
+	
+	.modal.left .modal-body,
+	.modal.right .modal-body {
+		padding: 15px 15px 80px;
+	}
+
+/*Left*/
+	.modal.left.fade .modal-dialog{
+		left: -320px;
+		-webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
+		   -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+		     -o-transition: opacity 0.3s linear, left 0.3s ease-out;
+		        transition: opacity 0.3s linear, left 0.3s ease-out;
+	}
+	
+	.modal.left.fade.in .modal-dialog{
+		left: 0;
+	}
+        
+/*Right*/
+	.modal.right.fade .modal-dialog {
+		right: -320px;
+		-webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+		   -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+		     -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+		        transition: opacity 0.3s linear, right 0.3s ease-out;
+	}
+	
+	.modal.right.fade.show .modal-dialog {
+		right: 0;
+	}
+
 span.c-sidebar-nav-icon{margin-top:-10px}
 .help-block{color:#dc4545}
 .c-sidebar-nav-title {
      margin-top: 0px !important;}
 button{margin-right: 5px !important;}
+.btnCon{float:right;}
+.heading{    font-size: 16px;
+    font-weight: 600;
+    color: #0d5f69;}
+.ag-theme-alpine .ag-header, .ag-theme-alpine .ag-row{height:36px !important; min-height:36px !important}
+.ag-theme-alpine .ag-filter-toolpanel-header, .ag-theme-alpine .ag-filter-toolpanel-search, .ag-theme-alpine .ag-status-bar, .ag-theme-alpine .ag-header-row, .ag-theme-alpine .ag-panel-title-bar-title, .ag-theme-alpine .ag-multi-filter-group-title-bar{height:36px !important}
+.ag-theme-alpine .ag-cell {
+    line-height: 36px !important;}   
+    html:not([dir=rtl]) .pagination {
+        padding-left: 0;
+        float: right;
+        margin-top:5px
+    }
 
-      .multiselect-dropdown .dropdown-btn .selected-item {
+.multiselect-dropdown .dropdown-btn .selected-item {
         border: 1px solid #0d5f69 !important;
         background: #0d5f69 !important;
     
@@ -63,7 +136,50 @@ html:not([dir=rtl]) .sidebar-lg-show.sidebar-fixed.sidebar-minimized .app-footer
 html:not([dir=rtl]) .sidebar-lg-show.sidebar-fixed .app-footer, html:not([dir=rtl]) .sidebar-lg-show.sidebar-fixed .main, html:not([dir=rtl]) .sidebar-show.sidebar-fixed .app-footer, html:not([dir=rtl]) .sidebar-show.sidebar-fixed .main {
     margin-left: 200px;
 }}
+::-webkit-scrollbar {
+    width: -moz-7px;
+    height: -moz-7px;
+    width: -o-7px;
+    height: -o-7px;
+    width: 7px;
+    height: 7px;
+}
+::-moz-scrollbar {
+    width: -moz-7px;
+    height: -moz-7px;
+    width: -o-7px;
+    height: -o-7px;
+    width: 7px;
+    height: 7px;
+}
 
+::-webkit-scrollbar-track {   
+    border-radius: -moz-10px;
+    border-radius: -o-10px;   
+    border-radius: 10px;
+}
+::-moz-scrollbar-track {
+    border-radius: -moz-10px;
+    border-radius: -o-10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: -moz-10px;
+    background: -moz-rgb(173, 175, 179);
+    border-radius: -o-10px;
+    background: -o-rgb(173, 175, 179);
+    border-radius: 10px;
+    background: rgb(173, 175, 179);
+}
+::-moz-scrollbar-thumb {
+    border-radius: -moz-10px;  
+    background: -moz-rgb(173, 175, 179);
+    border-radius: -o-10px;
+    background: -o-rgb(173, 175, 179);
+    border-radius: 10px;
+    background: rgb(173, 175, 179);
+}
 
 
 

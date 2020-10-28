@@ -23,8 +23,13 @@
     (onSelectAll)="onSelectAll($event)"
   >
   </ng-multiselect-dropdown>
+  <div class="card-header pl-0">
+    <i class="fa fa-align-justify"></i> Date Picker
+  </div>
   <ejs-datepicker id='datepicker' placeholder='Select a date' [value]='dateValue' [min]='minDate' [max]='maxDate'></ejs-datepicker>
-
+  <div class="card-header pl-0">
+    <i class="fa fa-align-justify"></i> Date Range Picker
+  </div>
   <ejs-daterangepicker id='daterangepicker' placeholder='Select a range' [startDate]='start' [endDate]='end'></ejs-daterangepicker>
   
 </div>
@@ -166,6 +171,10 @@
                           <input autocomplete="current-password" class="form-control" id="hf-password" name="hf-password" placeholder="Enter Password.." type="password" /><span class="help-block">Please enter your password</span>
                       </div>
                   </div>
+
+                  <div class="card-header pl-0">
+                    <i class="fa fa-align-justify"></i> Accordion
+                  </div>
                   <ejs-accordion>
                     <e-accordionitems>
                       <e-accordionitem expanded='true'>
@@ -202,13 +211,19 @@
                       </e-accordionitem>
                     </e-accordionitems>
                   </ejs-accordion>
+                  <div class="card-header pl-0">
+                    <i class="fa fa-align-justify"></i> Switch
+                  </div>
 <div class="col-md-12">
   <div class="row">
-  <label class="col-md-3">Touch Me</label>
+  <label class="col-md-3">Switch Button</label>
   <div class="col-md-9">
                   <ejs-switch [checked]="true"></ejs-switch>
                 </div>
                 </div>
+              </div>
+              <div class="card-header pl-0">
+                <i class="fa fa-align-justify"></i> Tab
               </div>
                   <div class="control-section e-tab-section">
                     <div class="e-sample-resize-container">
@@ -272,28 +287,7 @@
           </div>
       </div>
       
-      <div class="card">
-          <div class="card-header">Input <strong>Sizes</strong></div>
-          <div class="card-body">
-              <form action="" class="form-horizontal ng-untouched ng-pristine ng-valid" method="post" novalidate="">
-                  <div class="form-group row">
-                      <label class="col-sm-5 col-form-label" for="input-small">Small Input</label>
-                      <div class="col-sm-6"><input class="form-control form-control-sm" id="input-small" name="input-small" placeholder=".form-control-sm" type="text" /></div>
-                  </div>
-                  <div class="form-group row">
-                      <label class="col-sm-5 col-form-label" for="input-normal">Normal Input</label>
-                      <div class="col-sm-6"><input class="form-control" id="input-normal" name="input-normal" placeholder="Normal" type="text" /></div>
-                  </div>
-                  <div class="form-group row">
-                      <label class="col-sm-5 col-form-label" for="input-large">Large Input</label>
-                      <div class="col-sm-6"><input class="form-control form-control-lg" id="input-large" name="input-large" placeholder=".form-control-lg" type="text" /></div>
-                  </div>
-              </form>
-          </div>
-          <div class="card-footer">
-              <button class="btn btn-sm btn-primary" type="submit"><i class="fa fa-dot-circle-o"></i> Submit</button><button class="btn btn-sm btn-danger" type="reset"><i class="fa fa-ban"></i> Reset</button>
-          </div>
-      </div>
+      
   </div>
 </div>
 
