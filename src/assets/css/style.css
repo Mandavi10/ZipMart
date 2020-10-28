@@ -6,6 +6,18 @@ body{overflow-x:hidden}
     height: 55px;
     width: 61px;
     opacity: 0;}
+    .close{opacity:0.7 !important}
+.closepop{color: #041e27;
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    right: 8px;}
+    .page-item.active .page-link {
+        z-index: 3;
+        color: #fff;
+        background-color: #0d5f69 !important;
+        border-color: #0d5f69 !important;
+    }
 .mainContainer{padding-top:57px; width: 83.7%; z-index: 1031;
     position: absolute; right:0;}
 .mainFullContainer{padding-left:0}
