@@ -40,9 +40,9 @@ export class StateComponent implements OnInit {
 ];
 
 rowData = [
-    { Srno: '1', StateId: '46546', CountryId: '546', StateCode:'65589' , StateName:'Bihar' , Country:'India' , CreatedBy:'Raj',CreatedOn:'28/10/2020',UpdatedBy:'Rahul',UpdatedOn:'28/10/2020'},
-    { Srno: '2', StateId: '46546', CountryId: '54645', StateCode:'65498' , StateName:'Bihar' , Country:'India' , CreatedBy:'Raj',CreatedOn:'28/10/2020',UpdatedBy:'Rahul',UpdatedOn:'28/10/2020'},
-    { Srno: '3', StateId: '46546', CountryId: '87999', StateCode:'7989889' , StateName:'Bihar' , Country:'India' , CreatedBy:'Raj',CreatedOn:'28/10/2020',UpdatedBy:'Rahul',UpdatedOn:'28/10/2020'},
+    { Srno: '1', StateId: '46546', CountryId: '546', StateCode:'65589' , StateName:'Uttar Pradesh' , Country:'India' , CreatedBy:'Raj',CreatedOn:'28/10/2020',UpdatedBy:'Rahul',UpdatedOn:'28/10/2020'},
+    { Srno: '2', StateId: '46546', CountryId: '54645', StateCode:'65498' , StateName:'Uttar Pradesh' , Country:'India' , CreatedBy:'Raj',CreatedOn:'28/10/2020',UpdatedBy:'Rahul',UpdatedOn:'28/10/2020'},
+    { Srno: '3', StateId: '46546', CountryId: '87999', StateCode:'7989889' , StateName:'Uttar Pradesh' , Country:'India' , CreatedBy:'Raj',CreatedOn:'28/10/2020',UpdatedBy:'Rahul',UpdatedOn:'28/10/2020'},
    
  ];
 
