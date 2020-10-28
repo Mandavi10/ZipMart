@@ -1,0 +1,12 @@
+.rightmenu {
+    position: absolute;
+    right: 0px;
+    top: 10px;
+}
+.contentpop{
+    position: absolute;
+    right: 0px;
+    top: 31px;
+    width: 449px;
+}
+.popbox{height: 562px;}
