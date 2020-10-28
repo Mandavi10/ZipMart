@@ -1,12 +1,29 @@
 import { Component, OnInit } from '@angular/core';
-
+import { trigger, state, style, animate, transition } from '@angular/animations';
 @Component({
   selector: 'app-state',
   templateUrl: './state.component.html',
-  styleUrls: ['./state.component.css']
+  styleUrls: ['./state.component.css'],
+  animations: [
+    trigger('changeDivSize', [
+      state('initial', style({
+        width: '',
+        height: '100%'
+      })),
+      
+      state('final', style({
+        width: '100%',
+        height: '100%',
+        position: 'absolute'
+      })),
+      transition('initial=>final', animate('500ms')),
+      transition('final=>initial', animate('500ms'))
+    ]),
+    
+  ]
 })
 export class StateComponent implements OnInit {
-
+  currentState = 'initial';
   columnDefs = [
     //{headerName: 'All', field: '', width: 60, headerCheckboxSelection: true, checkboxSelection: true },
     {headerName: 'Sr. No.', field: 'Srno', width: 80 },
@@ -33,5 +50,7 @@ rowData = [
 
   ngOnInit() {
   }
-
+  changeState() {
+    this.currentState = this.currentState === 'initial' ? 'final' : 'initial';
+  }
 }
