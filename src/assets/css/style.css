@@ -18,6 +18,9 @@ body{overflow-x:hidden}
         background-color: #0d5f69 !important;
         border-color: #0d5f69 !important;
     }
+    .modal-body{height: 460px;}
+    .spanlbl{font-size: 25px;
+        color: #357279;}
 .mainContainer{padding-top:57px; width: 83.7%; z-index: 1031;
     position: absolute; right:0;}
 .mainFullContainer{padding-left:0}
