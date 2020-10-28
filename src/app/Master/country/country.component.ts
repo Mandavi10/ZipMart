@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
+
+import Swal from 'sweetalert2/dist/sweetalert2.js';
 @Component({
   selector: 'app-country',
   templateUrl: './country.component.html',
@@ -23,6 +25,11 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
   ]
 })
 export class CountryComponent implements OnInit {
+  name = 'Angular';
+
+  alertWithSuccess(){
+    Swal.fire('Saved Successfully', '', 'success')
+  }
   currentState = 'initial';
   columnDefs = [
     {headerName: 'Sr. No.', field: 'Srno' , width: 80 },
