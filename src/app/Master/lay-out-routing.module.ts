@@ -13,6 +13,7 @@ const routes: Routes = [
 {path: 'Location', loadChildren: './location/location.module#LocationModule'},
 
 {path: 'Country', loadChildren: './country/country.module#CountryModule'},
+{path: 'State', loadChildren: './state/state.module#StateModule'},
 
 
         ]
