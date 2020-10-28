@@ -9,6 +9,9 @@ const routes: Routes = [
    { path: '',component: MainLayoutComponent,children: [
 {path: 'Dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule'},
 
+{path: 'TestMaster', loadChildren: './test-master/test-master.module#TestMasterModule'},
+
+
 {path: 'City', loadChildren: './city/city.module#CityModule'},
 {path: 'Location', loadChildren: './location/location.module#LocationModule'},
 

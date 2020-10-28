@@ -1,0 +1,118 @@
+<div class="app-body">
+  <button (click)="changeState()" class="btnAnimate" type="button" data-target="#sidebar" data-class="c-sidebar-lg-show" responsive="true"></button>
+ 
+  <main class="mainContainer" [@changeDivSize]=currentState>
+<div class="animated fadeIn ">
+ 
+
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-header">
+          <div class="row">
+            
+          <div class="col-md-6 heading"> Test Master</div>
+          <div class="col-md-6">
+            <div class="btnCon">
+            <button class="btn btn-sm btn-primary" type="button" data-toggle="modal" data-target="#testForm"><i class="fa fa-plus pr-1"></i>New</button>
+          </div>
+        </div>
+          </div>
+        </div>
+        <div class="card-body">
+    
+      <ag-grid-angular
+      style="width: 100%; height: 410px;"
+      class="ag-theme-alpine"
+      [rowData]="rowData"
+      [columnDefs]="columnDefs">
+  </ag-grid-angular>
+
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#">Prev</a></li>
+    <li class="page-item active">
+      <a class="page-link" href="#">1</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">4</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+    </div>
+    
+  </div>
+</div>
+      </div>
+  
+    
+  </div>
+ 
+</main>
+</div>
+<div class="modal right fade" id="testForm" tabindex="-1" role="dialog" aria-labelledby="testForm">
+  <div class="modal-dialog modal-dialog-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Ag Grid</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="closepop">&times;</span>
+        </button>
+      </div>
+      <div class="card">
+        <div class="card-header"><strong>Basic Form</strong> Elements</div>
+        <div class="card-body">
+            <form action="" class="form-horizontal ng-untouched ng-pristine ng-valid" enctype="multipart/form-data" method="post" novalidate="">
+                <div class="form-group row">
+                    <label class="col-md-3 col-form-label">Static</label>
+                    <div class="col-md-9"><p class="form-control-static">Username</p></div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-md-3 col-form-label" for="text-input">Text Input</label>
+                    <div class="col-md-9"><input class="form-control" id="text-input" name="text-input" placeholder="Text" type="text" /><span class="help-block">This is a help text</span></div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-md-3 col-form-label" for="email-input">Email Input</label>
+                    <div class="col-md-9"><input autocomplete="email" class="form-control" id="email-input" name="email-input" placeholder="Enter Email" type="email" /><span class="help-block">Please enter your email</span></div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-md-3 col-form-label" for="password-input">Password</label>
+                    <div class="col-md-9">
+                        <input autocomplete="current-password" class="form-control" id="password-input" name="password-input" placeholder="Password" type="password" /><span class="help-block">Please enter a complex password</span>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-md-3 col-form-label" for="date-input">Date Input</label>
+                    <div class="col-md-9"><input class="form-control" id="date-input" name="date-input" placeholder="date" type="date" /><span class="help-block">Please enter a valid date</span></div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-md-3 col-form-label" for="disabled-input">Disabled Input</label>
+                    <div class="col-md-9"><input class="form-control" disabled="" id="disabled-input" name="disabled-input" placeholder="Disabled" type="text" /></div>
+                </div>
+                           
+               
+                <div class="form-group row">
+                    <label class="col-md-3 col-form-label" for="select3">Select</label>
+                    <div class="col-md-9">
+                        <select class="form-control form-control-sm" id="select3" name="select3">
+                            <option value="0">Please select</option>
+                            <option value="1">Option #1</option>
+                            <option value="2">Option #2</option>
+                            <option value="3">Option #3</option>
+                        </select>
+                    </div>
+                </div>
+               
+             
+              
+            </form>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-sm btn-primary" type="submit"><i class="fa fa-dot-circle-o"></i> Submit</button><button class="btn btn-sm btn-danger" type="reset"><i class="fa fa-ban"></i> Reset</button>
+            <button class="btn btn-sm btn-success" type="submit" (click)="alertWithSuccess()"><i class="fa fa-floppy-o"></i> Save Data</button>
+            
+        </div>
+    </div>
+     
+    </div>
+  </div>
+</div>
