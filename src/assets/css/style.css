@@ -1,4 +1,19 @@
 body{overflow-x:hidden}
+.modal.right .card-footer {
+    border-top: 0px !important;
+    position: fixed !important;
+    bottom: 0 !important;
+    right: 0 !important;}
+.modal.right .card {
+        border: 0px !important;}
+.swal2-title {
+            font-size: 1.2em !important;}
+.swal2-icon { margin: 5px auto 10px !important;}
+.swal2-styled.swal2-confirm {
+    background-color: #0a3c4e !important;}
+    .swal2-styled {
+        margin: .3125em;
+        padding: .3em 2em !important;}
 .btnAnimate{ position: absolute;
     z-index: 9999;
     left: 13rem;

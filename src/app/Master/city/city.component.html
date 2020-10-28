@@ -14,6 +14,8 @@
           <div class="col-md-6 heading"> City Master</div>
           <div class="col-md-6">
             <div class="btnCon">
+              <button class="btn btn-sm btn-primary" type="button" ><i class="fa fa-file-excel-o pr-1"></i>Export to Excel</button>
+         
             <button class="btn btn-sm btn-primary" type="button" data-toggle="modal" data-target="#testForm"><i class="fa fa-plus pr-1"></i>New</button>
           </div>
         </div>
@@ -66,22 +68,22 @@
               
                 <div class="form-group row">
                     <label class="col-md-3 col-form-label" for="text-input">City Code</label>
-                    <div class="col-md-9"><input class="form-control" id="text-input" name="text-input" placeholder="" type="text" /></div>
+                    <div class="col-md-9"><input class="form-control form-control-sm" id="text-input" name="text-input" placeholder="" type="text" /></div>
                 </div>
                 <div class="form-group row">
                   <label class="col-md-3 col-form-label" for="text-input"> City Name</label>
-                  <div class="col-md-9"><input class="form-control" id="text-input" name="text-input" placeholder="" type="text" /></div>
+                  <div class="col-md-9"><input class="form-control form-control-sm" id="text-input" name="text-input" placeholder="" type="text" /></div>
               </div>
               <div class="form-group row">
                 <label class="col-md-3 col-form-label" for="text-input"> Country</label>
-                <div class="col-md-9"><select class="form-control" id="text-input" name="text-input" placeholder="Text" type="text" >
+                <div class="col-md-9"><select class="form-control form-control-sm" id="text-input" name="text-input" placeholder="Text" type="text" >
                   <option>Select</option>
                   <option>India</option>
                 </select></div>
             </div>
             <div class="form-group row">
               <label class="col-md-3 col-form-label" for="text-input">State</label>
-              <div class="col-md-9"><select class="form-control" id="text-input" name="text-input" placeholder="Text" type="text" >
+              <div class="col-md-9"><select class="form-control form-control-sm" id="text-input" name="text-input" placeholder="Text" type="text" >
                 <option>Select</option>
                 <option>Up</option>
               </select></div>
@@ -92,7 +94,7 @@
               
             </form>
         </div>
-        <div class="card-footer footerclass">
+        <div class="card-footer">
              <button class="btn btn-sm btn-primary pull-right" type="submit" (click)="alertWithSuccess()"><i class="fa fa-floppy-o"></i> Save</button>
             
         </div>
