@@ -27,6 +27,7 @@ import Swal from 'sweetalert2/dist/sweetalert2.js';
 
 export class CityComponent implements OnInit {
   name = 'Angular';
+  currentState = 'initial';
   alertWithSuccess(){
     Swal.fire('Saved Successfully', '', 'success')
   }
@@ -58,5 +59,7 @@ bindgrid = [
 
   ngOnInit() {
   }
-
+  changeState() {
+    this.currentState = this.currentState === 'initial' ? 'final' : 'initial';
+  }
 }

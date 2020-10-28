@@ -1,4 +1,5 @@
 body{overflow-x:hidden}
+.ag-center-cols-container{width:1400px !important}
 .modal.right .card-footer {
     border-top: 0px !important;
     position: fixed !important;
@@ -14,6 +15,8 @@ body{overflow-x:hidden}
     .swal2-styled {
         margin: .3125em;
         padding: .3em 2em !important;}
+        .form-control {
+            font-size: 13px !important;}
 .btnAnimate{ position: absolute;
     z-index: 9999;
     left: 13rem;
@@ -145,6 +148,7 @@ button{margin-right: 5px !important;}
         -webkit-animation-duration: 1s;
         animation-duration: 1s;
         background:#eee;
+        height: 100%;
     }
     .app-footer, .app-header, .aside-menu, .main, .sidebar {
         transition: margin-left .25s,margin-right .25s,width .25s,flex .25s;
