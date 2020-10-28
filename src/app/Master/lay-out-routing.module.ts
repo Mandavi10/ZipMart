@@ -8,6 +8,10 @@ const routes: Routes = [
   { path: 'Login', component: LoginComponent },
    { path: '',component: MainLayoutComponent,children: [
 {path: 'Dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule'},
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1df19ccbf6648fe160f5b9dd1f33b47903e71be5
 {path: 'TestMaster', loadChildren: './test-master/test-master.module#TestMasterModule'},
 
 
@@ -15,6 +19,12 @@ const routes: Routes = [
 {path: 'Location', loadChildren: './location/location.module#LocationModule'},
 
 {path: 'Country', loadChildren: './country/country.module#CountryModule'},
+<<<<<<< HEAD
+=======
+{path: 'State', loadChildren: './state/state.module#StateModule'},
+
+
+>>>>>>> 1df19ccbf6648fe160f5b9dd1f33b47903e71be5
         ]
       }
 ];
