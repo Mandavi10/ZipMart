@@ -9,9 +9,10 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
   animations: [
     trigger('changeDivSize', [
       state('initial', style({
-        width: '80%',
+        width: '',
         height: '100%'
       })),
+      
       state('final', style({
         width: '100%',
         height: '100%',
