@@ -1,0 +1,12 @@
+.homeContainer{ position: absolute;
+    left: 0;
+    width: 75%;
+    top: 60px;
+    height: 100%;
+    margin: 5px 10px;
+    background: #fff;}
+.homeContainer .animated{background:#fff !important}
+.restLogo{ margin: 15% auto;
+    display: block;
+    width: 14%;}
+.mainLogo{ min-height: 532px;}
