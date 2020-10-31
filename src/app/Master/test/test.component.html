@@ -1,0 +1,18 @@
+<div class="app-body">
+  <button (click)="changeState()" class="btnAnimate" type="button" data-target="#sidebar" data-class="c-sidebar-lg-show" responsive="true"></button>
+ 
+  <main class="mainContainer" [@changeDivSize]=currentState>
+<div class="animated fadeIn ">
+  <div class="dual-list-wrapper">
+    <div class="dual-list-groupa">
+    <h4>Group A</h4>
+    <ejs-listbox [dataSource]="groupA" [fields]="setfield" height="330px" [toolbarSettings]="toolbar" scope="#listbox"></ejs-listbox>
+    </div>
+    <div class="dual-list-groupb">
+    <h4>Group B</h4>
+    <ejs-listbox [dataSource]="groupB" [fields]="setfield" height="330px" id="listbox"></ejs-listbox>
+    </div>
+  </div>
+  </div>
+  </main>
+</div>
