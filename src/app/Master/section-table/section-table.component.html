@@ -1,0 +1,53 @@
+<div class="app-body">
+  
+  <main class="homeContainer">
+
+ 
+  <div class="container-fluid p-0">
+    <div class="card">
+      <div class="card-header">
+        <div class="row">
+          
+        <div class="col-md-6 heading">Section Table </div>
+        <div class="menuList">
+          <a href="#"><i class="fa fa-square mr-1" style="color: #f9dfdf !important;" aria-hidden="true"></i>Occupied</a>
+          <a href="#"><i class="fa fa-square mr-1" style="color: #cad0d0 !important;" aria-hidden="true"></i>Vacant</a>
+
+      </div>
+        </div>
+      </div>
+
+      <div class="col-md-12">
+        <div class="selectTable" id="divsittingsection">
+        
+
+          <div class="sectionBox active headtblbox" >
+            <img src="/Content/images/family-icon-sm.png">
+            <h6>Family section</h6></div><div class="sectionBox headtblbox" >
+              <img src="/Content/images/family-icon-sm.png">
+              <h6>Terrace</h6>  
+            </div>
+            </div>
+      </div>
+      <div class="col-md-12 carddiv">
+      <div class="dual-list-wrapper">
+        <div class="dual-list-groupa">
+        <h5 class="tblname">Table</h5>
+        <ejs-listbox [dataSource]="groupA" [fields]="setfield" height="330px" [toolbarSettings]="toolbar" scope="#listbox"></ejs-listbox>
+        </div>
+        <div class="dual-list-groupb">
+        <h5 class="tblname">Family Section</h5>
+        <ejs-listbox [dataSource]="groupB" [fields]="setfield" height="330px" id="listbox"></ejs-listbox>
+        </div>
+      </div>
+      </div>
+   
+
+
+</div>
+    <div class="clearfix"></div>
+
+
+</div>
+</main>
+</div>
