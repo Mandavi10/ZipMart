@@ -16,8 +16,9 @@ const routes: Routes = [
 
 {path: 'Country', loadChildren: './country/country.module#CountryModule'},
 {path: 'State', loadChildren: './state/state.module#StateModule'},
-{path: 'Home', loadChildren: './home/home.module#HomeModule'},
 
+{path: 'Home', loadChildren: './home/home.module#HomeModule'},
+{path: 'Company', loadChildren: './company/company.module#CompanyModule'},
 
         ]
       }
