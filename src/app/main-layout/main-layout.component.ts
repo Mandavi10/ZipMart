@@ -19,7 +19,13 @@ export class MainLayoutComponent implements OnInit {
   toggleClass(event) {
     this.toggle = !this.toggle;
   }
-  constructor() { }
+  constructor(router: Router) {
+    router.events.subscribe(event => {
+      if (router.url === '/Home') {
+        this.showSideNav = false;
+      }
+    });
+  }
 
   ngOnInit() {
   }

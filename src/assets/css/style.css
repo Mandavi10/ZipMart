@@ -1,4 +1,6 @@
 body{overflow-x:hidden}
+button:focus{outline:0px !important}
+.card-body{padding-bottom: 0px !important;}
 .ag-center-cols-container{width:1400px !important}
 .modal.right .card-footer {
     border-top: 0px !important;
@@ -17,13 +19,17 @@ body{overflow-x:hidden}
         padding: .3em 2em !important;}
         .form-control {
             font-size: 13px !important;}
-.btnAnimate{ position: absolute;
+.btnAnimate{     position: absolute;
     z-index: 9999;
-    left: 13rem;
-    top: 0px;
+    left: 199px;
+    top: 4px;
     height: 55px;
     width: 61px;
-    opacity: 0;}
+    opacity: 1 ;
+    border: 0px;
+    background: transparent;}
+.btnAnimate i{ font-size:22px; color:#7f7c7c}
+.topBreadcrum{padding: 18px 0px 0px 60px !important}
     .close{opacity:0.7 !important}
 .closepop{color: #041e27;
     font-size: 30px;
@@ -32,9 +38,12 @@ body{overflow-x:hidden}
     right: 8px;}
     .page-item.active .page-link {
         z-index: 3;
-        color: #fff;
+        color: #fff !important;
         background-color: #0d5f69 !important;
         border-color: #0d5f69 !important;
+    }
+    .router-link-active {
+        background-color: #0d5f69 !important;
     }
     .modal-body{height: 460px;}
     .spanlbl{font-size: 25px;
@@ -101,19 +110,24 @@ span.c-sidebar-nav-icon{margin-top:-10px}
      margin-top: 0px !important;}
 button{margin-right: 5px !important;}
 .btnCon{float:right;}
-.heading{    font-size: 16px;
+.card-header {
+    padding: .5rem 1rem !important;}
+.heading{ font-size: 18px;
     font-weight: 600;
-    color: #0d5f69;}
-.ag-theme-alpine .ag-header, .ag-theme-alpine .ag-row{height:36px !important; min-height:36px !important}
-.ag-theme-alpine .ag-filter-toolpanel-header, .ag-theme-alpine .ag-filter-toolpanel-search, .ag-theme-alpine .ag-status-bar, .ag-theme-alpine .ag-header-row, .ag-theme-alpine .ag-panel-title-bar-title, .ag-theme-alpine .ag-multi-filter-group-title-bar{height:36px !important}
+    color: #000000;}
+.ag-theme-alpine .ag-header, .ag-theme-alpine .ag-row{height:30px !important; min-height:30px !important}
+.ag-theme-alpine .ag-filter-toolpanel-header, .ag-theme-alpine .ag-filter-toolpanel-search, .ag-theme-alpine .ag-status-bar, .ag-theme-alpine .ag-header-row, .ag-theme-alpine .ag-panel-title-bar-title, .ag-theme-alpine .ag-multi-filter-group-title-bar{height:30px !important}
 .ag-theme-alpine .ag-cell {
-    line-height: 36px !important;}   
+    line-height: 30px !important;}   
     html:not([dir=rtl]) .pagination {
         padding-left: 0;
         float: right;
-        margin-top:5px
+        margin-top:5px;
+        margin-bottom:5px
     }
-
+    .page-link {
+        color: #000 !important;
+            padding: .2rem .5rem !important;}
 .multiselect-dropdown .dropdown-btn .selected-item {
         border: 1px solid #0d5f69 !important;
         background: #0d5f69 !important;
