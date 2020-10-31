@@ -1,18 +1,23 @@
 .masterTabs {
-    background: #f5f6f9;
     color: #fff;
     border-radius: 2px;
     margin-bottom: 8px !important;
     text-align: center;
     margin-right: 5px;
     margin-left: 5px;
+    border: 1px solid #cdcdcd;
+    padding: 2px;
+    cursor: pointer;
 }
+#dvdefineRestro{background: #cdcd;}
+.highlightspan{color:#ffffff}
 
 #navContent{position: absolute;
-    z-index: 9999;
-    right: 0;}
+    right: 0;
+    top: 10%;
+}
 
-    #dvMenuBinding span{color:#121111;display: inline-block;}
+    #dvMenuBinding span{color:#121111;display: inline-block;width: 100%;}
     .downiconposi{width:100%;
     }
     .menuHeading{padding-top: 20%;}
