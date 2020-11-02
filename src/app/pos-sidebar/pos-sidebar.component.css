@@ -9,7 +9,7 @@
     padding: 2px;
     cursor: pointer;
 }
-#dvdefineRestro{background: #cdcd;}
+.active{background: #c6cac6;}
 .highlightspan{color:#ffffff}
 
 #navContent{position: absolute;

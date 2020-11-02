@@ -1,6 +1,8 @@
 body{overflow-x:hidden}
 button:focus{outline:0px !important}
-.card-body{padding-bottom: 0px !important;}
+.card-body{padding-bottom: 0px !important;
+    padding: 0.725rem !important;
+}
 .ag-center-cols-container{width:1400px !important}
 .modal.right .card-footer {
     border-top: 0px !important;
@@ -31,7 +33,7 @@ button:focus{outline:0px !important}
 .btnAnimate i{ font-size:22px; color:#7f7c7c}
 .topBreadcrum{padding: 18px 0px 0px 60px !important}
     .close{opacity:0.7 !important}
-.closepop{color: #041e27;
+.closepop{color: #000000;
     font-size: 30px;
     position: absolute;
     top: 0;

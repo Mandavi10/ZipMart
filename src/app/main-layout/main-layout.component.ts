@@ -10,6 +10,7 @@ export class MainLayoutComponent implements OnInit {
   public sidebarMinimized = false;
   public navItems = true;
   showSideNav = true;
+  
   toggleNav(){
     this.showSideNav = !this.showSideNav;
   }
