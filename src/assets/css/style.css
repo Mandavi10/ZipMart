@@ -32,7 +32,8 @@ button:focus{outline:0px !important}
     background: transparent;}
 .btnAnimate i{ font-size:22px; color:#7f7c7c}
 .topBreadcrum{padding: 18px 0px 0px 60px !important}
-    .close{opacity:0.7 !important}
+.close{opacity:0.7 !important}
+
 .closepop{color: #000000;
     font-size: 30px;
     position: absolute;
