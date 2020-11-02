@@ -41,19 +41,19 @@
     padding: 5px;
     color: #fff;
 }
-.sectionBox  img{width:100%}
+.sectionBox  img{width: 74%;
+}
 .carddiv{padding:10px}
 .sectionBox {
     padding: 0px 2px 1px;
-    color: #27444a;
+    color: #000;
     border-radius: 2px;
     text-align: center;
-    width: 64px;
+    width: 60px;
     background: #9db6e40f;
     float: left;
     border: 1px solid #9db6e4;
     margin: 4px;
-    min-height: 80px;
 }
 .menuList a {
     font-size: 13px;
