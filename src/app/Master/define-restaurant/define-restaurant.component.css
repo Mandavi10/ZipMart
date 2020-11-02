@@ -1,0 +1,16 @@
+.dvdefineRestro{border: 1px solid #cdcdcd;
+    height: 162px;
+    width: 100%;
+    text-align: center;
+    padding: 23px;
+    border-radius: 5px;
+}
+
+    .active{background: #d3e2d3;}
+
+    .boxpos{margin: 0% auto;
+        margin-top: 17%;}
+
+        .card {
+            height: 540px;
+        }

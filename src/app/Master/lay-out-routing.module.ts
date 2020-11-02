@@ -13,7 +13,7 @@ const routes: Routes = [
 
 {path: 'Test', loadChildren: './test/test.module#TestModule'},
 {path: 'Location', loadChildren: './location/location.module#LocationModule'},
-
+{path: 'DefineRestaurant', loadChildren: './define-restaurant/define-restaurant.module#DefineRestaurantModule'},
 {path: 'Country', loadChildren: './country/country.module#CountryModule'},
 {path: 'State', loadChildren: './state/state.module#StateModule'},
 
