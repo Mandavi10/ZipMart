@@ -1,7 +1,30 @@
 body{overflow-x:hidden}
 button:focus{outline:0px !important}
-.card-body{padding-bottom: 0px !important;}
+.card-body{padding-bottom: 0px !important;
+    padding: 0.525rem !important;
+}
 .ag-center-cols-container{width:1400px !important}
+.ag-theme-alpine .ag-root-wrapper {
+    border-color: var(--ag-border-color, #eee) !important;
+}
+
+.ag-theme-alpine .ag-row {
+      border-color: var(--ag-row-border-color, var(--ag-secondary-border-color, #f1f1f1)) !important;
+}
+.ag-theme-alpine .ag-filter-toolpanel-header, .ag-theme-alpine .ag-filter-toolpanel-search, .ag-theme-alpine .ag-status-bar, .ag-theme-alpine .ag-header-row, .ag-theme-alpine .ag-panel-title-bar-title, .ag-theme-alpine .ag-multi-filter-group-title-bar {
+    font-weight: 600 !important;}
+.card-header {
+    border-color: #fff !important;
+    padding-bottom: 0px !important;
+}
+.btn-main {
+    background-color: #d1d5d6 !important;
+    border-color: #68a9b1 !important;
+    color: #000 !important;
+    margin-top: 5px;
+    padding: .2rem .4rem !important; 
+}
+.btn-main:hover{background-color: #3b8992 !important; color:#fff !important}
 .modal.right .card-footer {
     border-top: 0px !important;
     position: fixed !important;
@@ -30,8 +53,9 @@ button:focus{outline:0px !important}
     background: transparent;}
 .btnAnimate i{ font-size:22px; color:#7f7c7c}
 .topBreadcrum{padding: 18px 0px 0px 60px !important}
-    .close{opacity:0.7 !important}
-.closepop{color: #041e27;
+.close{opacity:0.7 !important}
+
+.closepop{color: #000000;
     font-size: 30px;
     position: absolute;
     top: 0;
@@ -54,7 +78,10 @@ button:focus{outline:0px !important}
 .formCon{ position: absolute;
     top: 0;
     right: -490px;}
-
+    .modal-header {
+        padding: 1rem 1rem 0.3rem 1rem !important;
+        border-color: #f1f4f7 !important;
+    }
     .modal.left .modal-dialog,
 	.modal.right .modal-dialog {
 		position: fixed;
@@ -70,7 +97,8 @@ button:focus{outline:0px !important}
 	.modal.left .modal-content,
 	.modal.right .modal-content {
 		height: 100%;
-		overflow-y: auto;
+        overflow-y: auto;
+        overflow-x: hidden;
 	}
 	
 	.modal.left .modal-body,
@@ -110,11 +138,14 @@ span.c-sidebar-nav-icon{margin-top:-10px}
      margin-top: 0px !important;}
 button{margin-right: 5px !important;}
 .btnCon{float:right;}
+.card {
+    border: 0px solid !important;}
 .card-header {
     padding: .5rem 1rem !important;}
 .heading{ font-size: 18px;
     font-weight: 600;
-    color: #000000;}
+    color: #000000;
+padding-top:5px }
 .ag-theme-alpine .ag-header, .ag-theme-alpine .ag-row{height:30px !important; min-height:30px !important}
 .ag-theme-alpine .ag-filter-toolpanel-header, .ag-theme-alpine .ag-filter-toolpanel-search, .ag-theme-alpine .ag-status-bar, .ag-theme-alpine .ag-header-row, .ag-theme-alpine .ag-panel-title-bar-title, .ag-theme-alpine .ag-multi-filter-group-title-bar{height:30px !important}
 .ag-theme-alpine .ag-cell {

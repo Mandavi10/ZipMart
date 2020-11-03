@@ -8,8 +8,13 @@
     border: 1px solid #cdcdcd;
     padding: 2px;
     cursor: pointer;
+    height:80px;
 }
-#dvdefineRestro{background: #cdcd;}
+.menuList{
+    width: 50%;
+    padding: 0px;
+}
+.active{background: #c6cac6;}
 .highlightspan{color:#ffffff}
 
 #navContent{position: absolute;
