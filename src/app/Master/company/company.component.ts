@@ -24,11 +24,39 @@ import Swal from 'sweetalert2/dist/sweetalert2.js';
   ]
 })
 export class CompanyComponent implements OnInit {
-  currentState = 'initial';
-  name = 'Angular';
 
+  name = 'Angular';
+  simpleAlert(){
+    Swal.fire('Hello world!');
+  }
+  
   alertWithSuccess(){
-    Swal.fire('Saved Successfully', '', 'success')
+    Swal.fire('Thank you...', 'You submitted succesfully!', 'success')
+  }
+  
+  confirmBox(){
+    Swal.fire({
+      title: 'Are you sure want to remove?',
+      text: 'You will not be able to recover this file!',
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonText: 'Yes, delete it!',
+      cancelButtonText: 'No, keep it'
+    }).then((result) => {
+      if (result.value) {
+        Swal.fire(
+          'Deleted!',
+          'Your imaginary file has been deleted.',
+          'success'
+        )
+      } else if (result.dismiss === Swal.DismissReason.cancel) {
+        Swal.fire(
+          'Cancelled',
+          'Your imaginary file is safe :)',
+          'error'
+        )
+      }
+    })
   }
   columnDefs = [
     //{headerName: 'All', field: '', width: 60, headerCheckboxSelection: true, checkboxSelection: true },
@@ -56,7 +84,5 @@ rowData = [
 
   ngOnInit() {
   }
-  changeState() {
-    this.currentState = this.currentState === 'initial' ? 'final' : 'initial';
-  }
+ 
 }

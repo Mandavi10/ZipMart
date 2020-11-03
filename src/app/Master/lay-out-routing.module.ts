@@ -20,6 +20,7 @@ const routes: Routes = [
 {path: 'Home', loadChildren: './home/home.module#HomeModule'},
 {path: 'SectionTable', loadChildren: './section-table/section-table.module#SectionTableModule'},
 {path: 'Company', loadChildren: './company/company.module#CompanyModule'},
+{path: 'MenuCreation', loadChildren: './menu-creation/menu-creation.module#MenuCreationModule'},
 
         ]
       }
