@@ -10,6 +10,7 @@ export class MainLayoutComponent implements OnInit {
   public sidebarMinimized = false;
   public navItems = true;
   showSideNav = true;
+  showPOSNav = false;
   
   toggleNav(){
     this.showSideNav = !this.showSideNav;
@@ -24,10 +25,16 @@ export class MainLayoutComponent implements OnInit {
     router.events.subscribe(event => {
       if (router.url === '/Home') {
         this.showSideNav = false;
+        this.showPOSNav = true;
       }
        if (router.url === '/SectionTable') {
         this.showSideNav = false;
-      }
+        this.showPOSNav = true;
+        }
+        if (router.url === '/DefineRestaurant') {
+          this.showSideNav = false;
+          this.showPOSNav = true;
+        }
     });
   }
 
