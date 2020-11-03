@@ -27,6 +27,9 @@ export class MainLayoutComponent implements OnInit {
        if (router.url === '/SectionTable') {
         this.showSideNav = false;
       }
+      if (router.url === '/MenuCreation') {
+        this.showSideNav = false;
+      }
     });
   }
 

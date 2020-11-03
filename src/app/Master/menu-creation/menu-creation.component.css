@@ -1,0 +1,76 @@
+
+
+#container {
+    visibility: hidden;
+  }
+  
+  #loader {
+  color: #008cff;
+  height: 40px;
+  width: 30%;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  }
+  
+  .dual-list-groupa,
+  .dual-list-groupb {
+      width: 48%;
+  }
+  
+  .dual-list-groupa {
+      float: left;
+  }
+  
+  .dual-list-groupb {
+      float: right;
+  }
+  .menuList {
+    font-size: 19px;
+    position: absolute;
+    right: 34px;
+    top: 4px;
+    cursor: pointer;
+}
+.headtblbox {
+    min-height: 75px !important;
+    max-height: 75px;
+    overflow: hidden;
+}
+.tblname{ background-color: #0a4c588c;
+    padding: 5px;
+    color: #fff;
+}
+
+
+.panel ul{list-style: none;
+    display: inline-flex;
+padding: 0px;
+float: right;}
+.panel li{    display: inline;
+    text-decoration: underline;
+    margin: 5px;
+    padding: 0px;
+    font-size: 11px;
+color:#fff;}
+.panel{  background-color: #357279;
+    height: 31px;}
+.noDataMsg {
+    color: #183d44;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin-top: 30%;
+    padding: 20px;
+    height: 199px;
+
+}
+.scrol{    overflow-y: scroll;
+    height: 397px;
+    display: block;}
+.lbltbl{color: #fff;}
+.homeContainer{width:100%!important;}
+.headcolor{    background-color: #607377;
+}
+.btntrash{font-size: 18px;
+padding-top :4px;}
