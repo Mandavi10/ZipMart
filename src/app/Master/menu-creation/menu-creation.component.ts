@@ -45,12 +45,14 @@ export class MenuCreationComponent implements OnInit {
   columnDefs = [
     {headerName: 'item Name', field: 'Srno', width: 130 },
     {headerName: 'Item Price', field: 'StateId', width: 130,  },
-    { headerName: 'Edit', field: 'edit', editable: true, 
+    { headerName: 'Edit', field: 'edit', editable: true,  
+    cellStyle: {color: 'green', },
        cellRenderer: function(params) {
             return '<i class="fa fa-pencil-square-o" aria-hidden="true"></i>'
        } },
   
-       { headerName: 'Edit', field: 'trash', editable: true, 
+       { headerName: 'Delete', field: 'trash', editable: true, 
+       cellStyle: {color: '#de1414b0', }, 
        cellRenderer: function(params) {
             return '<i class="fa fa-trash" aria-hidden="true"></i>'
        } },
@@ -68,14 +70,17 @@ rowData = [
   //{headerName: 'All', field: '', width: 60, headerCheckboxSelection: true, checkboxSelection: true },
   {headerName: 'item Name', field: 'Srno', width: 130 },
   {headerName: 'Item Price', field: 'StateId', width: 130,  },
-  { headerName: 'Edit', field: 'edit', editable: true, 
+  { headerName: 'Edit', field: 'edit',  
+    cellStyle: {color: 'green', },
+  
      cellRenderer: function(params) {
-          return '<i class="fa fa-pencil-square-o" aria-hidden="true"></i>'
+          return '<i class="fa fa-pencil-square-o greenedit" aria-hidden="true"></i>'
      } },
 
-     { headerName: 'Edit', field: 'trash', editable: true, 
+     { headerName: 'Delete', field: 'trash', 
+     cellStyle: {color: '#de1414b0', }, 
      cellRenderer: function(params) {
-          return '<i class="fa fa-trash" aria-hidden="true"></i>'
+          return '<i class="fa fa-trash redtrash" aria-hidden="true"></i>'
      } },
      
 ];
@@ -88,7 +93,7 @@ rowData1= [
 
 
 columnDefs3= [
-  { headerName: 'Sr.No', field: 'Srno', editable: true,  width: 80,
+  { headerName: 'Sr.No', field: 'Srno',   width: 80,
   cellRenderer: function(params) {
        return '<input type="checkbox"/>'
   } },

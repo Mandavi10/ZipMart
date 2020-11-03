@@ -55,6 +55,8 @@ float: right;}
 color:#fff;}
 .panel{  background-color: #357279;
     height: 31px;}
+    .card-footer{border:none;
+    padding: 0px;}
 .noDataMsg {
     color: #183d44;
     font-weight: bold;
@@ -65,9 +67,16 @@ color:#fff;}
     height: 199px;
 
 }
-.scrol{    overflow-y: scroll;
+.card{margin-bottom: 8px !important;}
+.both{    font-size: 11px;
+    
+    padding-top: 6px;}
+.greenedit{color: rgb(179, 184, 179);}
+.redtrash{color: red;}
+.scrol{    overflow-y: auto;
     height: 397px;
-    display: block;}
+    display: block;
+    border: 1px solid #e8e8e8!important;}
 .lbltbl{color: #fff;}
 .homeContainer{width:100%!important;}
 .headcolor{    background-color: #607377;

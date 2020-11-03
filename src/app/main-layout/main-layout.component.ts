@@ -35,8 +35,8 @@ export class MainLayoutComponent implements OnInit {
         this.showSideNav = false;
       }
 
-        this.showPOSNav = true;
-        }
+      
+      
         if (router.url === '/DefineRestaurant') {
           this.showSideNav = false;
           this.showPOSNav = true;
@@ -49,3 +49,4 @@ export class MainLayoutComponent implements OnInit {
   }
 
 }
+
