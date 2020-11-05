@@ -45,6 +45,11 @@ export class MainLayoutComponent implements OnInit {
           this.showSideNav = false;
           this.showPOSNav = true;
         }
+
+        if (router.url === '/Addon') {
+          this.showSideNav = false;
+          this.showPOSNav = true;
+        }
     });
   }
 
@@ -52,3 +57,4 @@ export class MainLayoutComponent implements OnInit {
   }
 
 }
+

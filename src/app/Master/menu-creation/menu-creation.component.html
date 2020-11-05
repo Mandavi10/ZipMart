@@ -11,16 +11,16 @@
         <div class="col-md-6 heading">Menu Creation </div>
         <div class="col-md-6">
           <div class="btnCon">
-            <button class="btn btn-sm btn-primary" type="button" data-toggle="modal" data-target="#addmenu"  ><i class="fa fa-plus pr-1"></i>Add Menu</button>
-          <button class="btn btn-sm btn-primary" type="button" data-toggle="modal" data-target="#updatemenu">
-            <i class="fa fa-pencil-square-o pr-2" aria-hidden="true">
-          </i>Update Menu</button>
+            <button class="btn btn-sm btn-primary btn-main" type="button" data-toggle="modal" data-target="#addmenu"  ><i class="fa fa-plus pr-1" title="Add menu"></i></button>
+          <button class="btn btn-sm btn-primary btn-main" type="button" data-toggle="modal" data-target="#updatemenu">
+            <i class="fa fa-pencil-square-o pr-2" aria-hidden="true"  title="Update menu">
+          </i></button>
         </div>
       </div>
         </div>
       </div>
 
-      <div class="col-lg-12 mt-2">
+      <div class="col-lg-12 ">
         <div class="col-md-6 p-0">
           <div class="form-group row">
             <label class="col-md-2 col-form-label" for="select3">Select Menu:</label>
@@ -36,22 +36,22 @@
         </div>
       </div>
 
-      <div class="col-lg-12  mt-2">
+      <div class="col-lg-12  ">
         <div class="row">
         <div class="col-lg-6  ">
           <div class="card scrol">
         
 
      
-        <div class="col-lg-12  mt-2">
+        <div class="col-lg-12  ">
           <div class="row mb-2">
             <div class="col-md-6 heading">Main Menu</div>
             <div class="col-md-6">
               <div class="btnCon">
-                <button class="btn btn-sm btn-primary" type="button" ><i class="fa fa-print pr-1"></i>Print</button>
-              <button class="btn btn-sm btn-primary" type="button" data-toggle="modal" data-target="#addlevel">
-                <i class="fa fa-plus pr-2" aria-hidden="true">
-              </i>Add Level</button>
+                <button class="btn btn-sm btn-primary btn-main" type="button" ><i class="fa fa-print pr-1" title="Print"></i></button>
+              <button class="btn btn-sm btn-primary btn-main" type="button" data-toggle="modal" data-target="#addlevel">
+                <i class="fa fa-plus pr-2" aria-hidden="true" title="add">
+              </i></button>
             </div>
           
           </div>
@@ -60,8 +60,11 @@
         <div class="col-md-12 panel headcolor mb-1">
           <div class="row">
           
-          <div class="col-md-6 lbltbl"><i class="fa fa-cutlery" aria-hidden="true"></i>
+          <div class="col-md-6 lbltbl">
+            <div class="both">
+            <i class="fa fa-cutlery" aria-hidden="true"></i>
             <label class="ml-1">Beverages</label>
+          </div>
           </div>
           <div class="col-md-6">
         <ul>
@@ -78,9 +81,12 @@
 <div class="col-md-12 panel">
   <div class="row">
   
-  <div class="col-md-6 lbltbl"><i class="fa fa-cutlery" aria-hidden="true"></i>
-    <label class="ml-1">Hot Drinks</label>
-  </div>
+    <div class="col-md-6 lbltbl">
+      <div class="both">
+      <i class="fa fa-cutlery" aria-hidden="true"></i>
+      <label class="ml-1">Cold Drinks</label>
+    </div>
+    </div>
   <div class="col-md-6">
 <ul>
   <li>Sub Level</li>
@@ -104,10 +110,12 @@
             <div class="col-md-12 panel">
               <div class="row">
               
-              <div class="col-md-6 lbltbl">
-                <i class="fa fa-cutlery" aria-hidden="true"></i>
-                <label class="ml-1">Cold Drinks</label>
-              </div>
+                <div class="col-md-6 lbltbl">
+                  <div class="both">
+                  <i class="fa fa-cutlery" aria-hidden="true"></i>
+                  <label class="ml-1">Hot Drinks</label>
+                </div>
+                </div>
               <div class="col-md-6">
             <ul>
               <li>Sub Level</li>
@@ -130,9 +138,12 @@
                     <div class="col-md-12 panel headcolor ">
                       <div class="row">
                       
-                      <div class="col-md-6 lbltbl"><i class="fa fa-cutlery" aria-hidden="true"></i>
-                        <label class="ml-1">dfgc</label>
-                      </div>
+                        <div class="col-md-6 lbltbl">
+                          <div class="both">
+                          <i class="fa fa-cutlery" aria-hidden="true"></i>
+                          <label class="ml-1">xcdv</label>
+                        </div>
+                        </div>
                       <div class="col-md-6">
                     <ul>
                       <li></li>
@@ -146,13 +157,125 @@
                     </div>
                   </div>
                       </div>
+
+
+
+
+
+                      <div class="col-md-12 panel headcolor mt-2 mb-1">
+                        <div class="row">
+                        
+                        <div class="col-md-6 lbltbl">
+                          <div class="both">
+                          <i class="fa fa-cutlery" aria-hidden="true"></i>
+                          <label class="ml-1">Beverages</label>
+                        </div>
+                        </div>
+                        <div class="col-md-6">
+                      <ul>
+                        <li data-toggle="modal" data-target="#sublevel">Sub Level</li>
+                        <li >Add Item</li>
+                        <li data-toggle="modal" data-target="#updatelevel"><i class="fa fa-list" aria-hidden="true"></i></li>
+                        <li  (click)="confirmBox()"><i class="fa fa-trash" aria-hidden="true"></i></li>
+                      </ul>
+                      
+                        </div>
+                      </div>
+                      </div>
+                      <div class="col-md-12 pr-0">
+              <div class="col-md-12 panel">
+                <div class="row">
+                
+                  <div class="col-md-6 lbltbl">
+                    <div class="both">
+                    <i class="fa fa-cutlery" aria-hidden="true"></i>
+                    <label class="ml-1">Cold Drinks</label>
+                  </div>
+                  </div>
+                <div class="col-md-6">
+              <ul>
+                <li>Sub Level</li>
+                <li>Add Item</li>
+                <li><i class="fa fa-list" aria-hidden="true"></i></li>
+                <li><i class="fa fa-trash" aria-hidden="true"></i></li>
+              </ul>
+              
+                </div>
+              </div>
+              </div>
+                        <ag-grid-angular
+                        style="width: 100%; height: 150px;"
+                        class="ag-theme-alpine"
+                        [rowData]="rowData"
+                        [columnDefs]="columnDefs">
+                    </ag-grid-angular>
+                    </div>
+                       
+                        <div class="col-lg-12 pr-0  mt-2">
+                          <div class="col-md-12 panel">
+                            <div class="row">
+                            
+                              <div class="col-md-6 lbltbl">
+                                <div class="both">
+                                <i class="fa fa-cutlery" aria-hidden="true"></i>
+                                <label class="ml-1">Hot Drinks</label>
+                              </div>
+                              </div>
+                            <div class="col-md-6">
+                          <ul>
+                            <li>Sub Level</li>
+                            <li>Add Item</li>
+                            <li><i class="fa fa-list" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-trash" aria-hidden="true"></i></li>
+                          </ul>
+                          
+                            </div>
+                          </div>
+                          </div>
+                                    <ag-grid-angular
+                                    style="width: 100%; height: 150px;"
+                                    class="ag-theme-alpine"
+                                    [rowData]="rowData1"
+                                    [columnDefs]="columnDefs1">
+                                </ag-grid-angular>
+              
+                                <div class="col-md-12 mt-2 pr-0">
+                                  <div class="col-md-12 panel headcolor ">
+                                    <div class="row">
+                                    
+                                      <div class="col-md-6 lbltbl">
+                                        <div class="both">
+                                        <i class="fa fa-cutlery" aria-hidden="true"></i>
+                                        <label class="ml-1">xcdv</label>
+                                      </div>
+                                      </div>
+                                    <div class="col-md-6">
+                                  <ul>
+                                    <li></li>
+                                    <li>Add Item</li>
+                                    <li><i class="fa fa-list" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-trash" aria-hidden="true"></i></li>
+                                  </ul>
+                                  
+                                    </div>
+                                  </div>
+                                  </div>
+                                </div>
+                                    </div>
+
+
+
+
+
+
+
                      
                       </div>
                      
                     </div>
         </div>
         <div class="col-md-6  ">
-          <div class="card">
+          <div class="card scrol">
             <div class="col-md-12 mt-3 mb-3">
             <ag-grid-angular
             style="width: 100%; height: 379px;"
@@ -162,7 +285,22 @@
         </ag-grid-angular>
       </div>
           <!-- <span class="noDataMsg">No data Found</span> -->
+        
        </div>
+       <div class="col-md-12 btnexit">
+        <div class="btnCon">
+          <button class="btn btn-sm btn-primary btn-main" type="button" ><i class="fa fa-floppy-o pr-1" title="Save"></i></button>
+        <button class="btn btn-sm btn-primary btn-main" type="button" >
+          <i class="fa fa-sign-out" aria-hidden="true" title="Exit">
+        </i></button>
+      </div>
+      </div>
+
+
+
+
+     
+
         </div>
       </div>
      

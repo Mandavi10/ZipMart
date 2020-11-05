@@ -21,6 +21,8 @@ const routes: Routes = [
 {path: 'SectionTable', loadChildren: './section-table/section-table.module#SectionTableModule'},
 {path: 'Company', loadChildren: './company/company.module#CompanyModule'},
 {path: 'MenuCreation', loadChildren: './menu-creation/menu-creation.module#MenuCreationModule'},
+{path: 'Addon', loadChildren: './addon/addon.module#AddonModule'},
+
 
         ]
       }
