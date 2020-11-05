@@ -1,5 +1,9 @@
 body{overflow-x:hidden}
 button:focus{outline:0px !important}
+p {
+    font-family: 'Roboto';
+    font-weight: 500;
+}
 .card-body{padding-bottom: 0px !important;
     padding: 0.525rem !important;
 }
