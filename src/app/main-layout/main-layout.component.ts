@@ -29,14 +29,14 @@ export class MainLayoutComponent implements OnInit {
       }
        if (router.url === '/SectionTable') {
         this.showSideNav = false;
+        this.showPOSNav = true;
 
       }
       if (router.url === '/MenuCreation') {
         this.showSideNav = false;
+        this.showPOSNav = true;
       }
 
-        this.showPOSNav = true;
-        }
         if (router.url === '/DefineRestaurant') {
           this.showSideNav = false;
           this.showPOSNav = true;
