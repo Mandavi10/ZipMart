@@ -1,13 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import Swal from 'sweetalert2/dist/sweetalert2.js';
 @Component({
-  selector: 'app-menu-creation',
-  templateUrl: './menu-creation.component.html',
-  styleUrls: ['./menu-creation.component.css']
+  selector: 'app-addon',
+  templateUrl: './addon.component.html',
+  styleUrls: ['./addon.component.css']
 })
-export class MenuCreationComponent implements OnInit {
-
-     name = 'Angular';
+export class AddonComponent implements OnInit {
+  name = 'Angular';
      simpleAlert(){
        Swal.fire('Hello world!');
      }
@@ -66,39 +65,13 @@ rowData = [
   { Srno: 'Tea', StateId: '20', CountryId: '546', StateCode:'65589' ,},
  ];
 
- columnDefs1 = [
-  //{headerName: 'All', field: '', width: 60, headerCheckboxSelection: true, checkboxSelection: true },
-  {headerName: 'item Name', field: 'Srno', width: 130 },
-  {headerName: 'Item Price', field: 'StateId', width: 130,  },
-  { headerName: 'Edit', field: 'edit',  
-    cellStyle: {color: 'green', },
-  
-     cellRenderer: function(params) {
-          return '<i class="fa fa-pencil-square-o greenedit" aria-hidden="true"></i>'
-     } },
-
-     { headerName: 'Delete', field: 'trash', 
-     cellStyle: {color: '#de1414b0', }, 
-     cellRenderer: function(params) {
-          return '<i class="fa fa-trash redtrash" aria-hidden="true"></i>'
-     } },
-     
-];
-
-rowData1= [
-{ Srno: 'Tea', StateId: '20', CountryId: '546', StateCode:'65589' ,},
-{ Srno: 'Tea', StateId: '20', CountryId: '546', StateCode:'65589' ,},
-{ Srno: 'Tea', StateId: '20', CountryId: '546', StateCode:'65589' ,},
-];
-
-
-columnDefs3= [
-  { headerName: 'Sr.No', field: 'Srno',   width: 80,
+ columnDefs3= [
+  { headerName: 'Select', field: 'Srno',   width: 80,
   cellRenderer: function(params) {
        return '<input type="checkbox"/>'
   } },
   {headerName: 'item Name', field: 'iteam', width: 130 },
-  {headerName: 'Item Price', field: 'StateId', width: 130,  },
+  {headerName: 'Add-ons Qty', field: 'StateId', width: 130,  },
 
   
 
@@ -108,6 +81,28 @@ columnDefs3= [
 ];
 
 rowData3= [
+{ iteam: 'Tea', StateId: '20', },
+{ iteam: 'Tea', StateId: '20',},
+{ iteam: 'Tea', StateId: '20',},
+];
+
+
+columnDefs4= [
+  { headerName: 'Select', field: 'Srno',   width: 80,
+  cellRenderer: function(params) {
+       return '<input type="checkbox"/>'
+  } },
+  {headerName: 'item Name', field: 'iteam', width: 130 },
+  {headerName: 'Add-ons Qty', field: 'StateId', width: 130,  },
+
+  
+
+    
+
+     
+];
+
+rowData4= [
 { iteam: 'Tea', StateId: '20', },
 { iteam: 'Tea', StateId: '20',},
 { iteam: 'Tea', StateId: '20',},

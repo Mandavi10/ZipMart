@@ -76,10 +76,20 @@ color:#fff;}
 .scrol{    overflow-y: auto;
     height: 397px;
     display: block;
-    border: 1px solid #e8e8e8!important;}
+    /* border: 1px solid #e8e8e8!important;} */}
 .lbltbl{color: #fff;}
-.homeContainer{width:100%!important;}
+
 .headcolor{    background-color: #607377;
 }
 .btntrash{font-size: 18px;
 padding-top :4px;}
+.boxdiv{    border: 1px solid #d8d8d8;
+    padding: 1%;}
+.search{
+    position: absolute;
+    right: 7px;
+    top: 6px;
+}
+.filter{position: relative;}
+.filter input{width: 100%;
+    border: 1px solid #d8d8d8;}
