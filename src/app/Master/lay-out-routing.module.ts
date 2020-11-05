@@ -22,7 +22,7 @@ const routes: Routes = [
 {path: 'Company', loadChildren: './company/company.module#CompanyModule'},
 {path: 'MenuCreation', loadChildren: './menu-creation/menu-creation.module#MenuCreationModule'},
 {path: 'Addon', loadChildren: './addon/addon.module#AddonModule'},
-
+{path: 'KitchenSection', loadChildren: './kitchen-section/kitchen-section.module#KitchenSectionModule'},
 
         ]
       }
