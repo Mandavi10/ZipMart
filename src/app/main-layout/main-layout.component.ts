@@ -41,7 +41,10 @@ export class MainLayoutComponent implements OnInit {
           this.showSideNav = false;
           this.showPOSNav = true;
         }
-
+        if (router.url === '/EmployeeDetails') {
+          this.showSideNav = false;
+          this.showPOSNav = true;
+        }
     });
   }
 
