@@ -1,0 +1,307 @@
+<div class="app-body">
+  
+  <main class="homeContainer">
+
+ 
+  <div class="container-fluid p-0">
+    <div class="card">
+      <div class="card-header">
+        <div class="row">
+          
+        <div class="col-md-6 heading">Add-On </div>
+        <div class="col-md-6">
+          <!-- <div class="btnCon">
+            <button class="btn btn-sm btn-primary btn-main" type="button" data-toggle="modal" data-target="#addmenu"  ><i class="fa fa-plus pr-1" title="Add menu"></i></button>
+          <button class="btn btn-sm btn-primary btn-main" type="button" data-toggle="modal" data-target="#updatemenu">
+            <i class="fa fa-pencil-square-o pr-2" aria-hidden="true"  title="Update menu">
+          </i></button>
+        </div> -->
+      </div>
+        </div>
+      </div>
+
+    
+
+      <div class="col-lg-12  ">
+       
+
+          <div class="col-md-12 boxdiv">
+            <div class="row">
+         <div class="col-md-6  ">
+          <div class="card ">
+            <div class="col-md-12">
+            <div class="row mb-2">
+              <div class="col-md-6 heading"></div>
+              <div class="col-md-6">
+                <div class="filter">
+                  <input type="text" id="txtSearch" placeholder="Search" />
+                  <i class="fa fa-search search" aria-hidden="true"></i>
+              </div>
+            
+            </div>
+          </div>
+            </div>
+            <div class="col-md-12  mb-3">
+            <ag-grid-angular
+            style="width: 100%; height: 379px;"
+            class="ag-theme-alpine"
+            [rowData]="rowData4"
+            [columnDefs]="columnDefs4">
+        </ag-grid-angular>
+      </div>
+          <!-- <span class="noDataMsg">No data Found</span> -->
+        
+       </div>
+       <div class="col-md-12 btnexit">
+        <div class="btnCon">
+          <button class="btn btn-sm btn-primary btn-main" type="button" ><i class="fa fa-angle-double-right pr-1" title="Procced"></i></button>
+       
+      </div>
+      </div>
+
+
+
+
+     
+
+        </div>
+
+
+        <div class="col-md-6  ">
+          <div class="card ">
+            <div class="col-md-12">
+            <div class="row ">
+              <div class="col-md-6 heading">Add On List</div>
+              <div class="col-md-6">
+                <div class="filter">
+                  <input type="text" id="txtSearch" placeholder="Search" />
+                  <i class="fa fa-search search" aria-hidden="true"></i>
+              </div>
+            
+            </div>
+          </div>
+            </div>
+            <div class="col-md-12  mb-3">
+            <ag-grid-angular
+            style="width: 100%; height: 379px;"
+            class="ag-theme-alpine"
+            [rowData]="rowData3"
+            [columnDefs]="columnDefs3">
+        </ag-grid-angular>
+      </div>
+          <!-- <span class="noDataMsg">No data Found</span> -->
+        
+       </div>
+       <div class="col-md-12 btnexit">
+        <div class="btnCon">
+          <button class="btn btn-sm btn-primary btn-main" type="button" ><i class="fa fa-plus pr-1" title="Add"></i></button>
+          <button class="btn btn-sm btn-primary btn-main" type="button"  (click)="confirmBox()"><i class="fa fa-trash pr-1" title="Delete"></i></button>
+        <button class="btn btn-sm btn-primary btn-main" type="button" >
+          <i class="fa fa-sign-out" aria-hidden="true" title="Exit">
+        </i></button>
+      </div>
+      </div>
+
+
+
+
+     
+
+        </div>
+        </div>
+      </div>
+     
+      </div>
+
+
+     
+   
+
+
+</div>
+    <div class="clearfix"></div>
+
+
+</div>
+</main>
+</div>
+
+
+<div class="modal  fade" id="updatemenu" tabindex="-1" role="dialog" aria-labelledby="updatemenu">
+  <div class="modal-dialog modal-dialog-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Update Menu</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="closepop">&times;</span>
+        </button>
+      </div>
+      <div class="card">
+       
+        <div class="card-body">
+            <form action="" class="form-horizontal ng-untouched ng-pristine ng-valid" enctype="multipart/form-data" method="post" novalidate="">
+                
+                <div class="form-group row">
+                    <!-- <label class="col-md-3 col-form-label" for="country code"></label> -->
+                    <div class="col-md-10"><input class="form-control form-control-sm" id="text-input" name="country code" placeholder="" type="text" /></div>
+                    <div class="col-sm-8 col-md-2 col-8">
+                      <i class="fa fa-pencil-square-o pr-1 btntrash " style="color:#2dc740" aria-hidden="true" id="btnedit">
+                      </i><i class="fa fa-trash pl-1 btntrash" style="color:#ef5656 !important" aria-hidden="true" id="btndelete" ></i></div>
+              
+                </div>
+             
+          
+               
+             
+              
+            </form>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-sm btn-primary pull-right" type="submit" (click)="alertWithSuccess()"><i class="fa fa-floppy-o"></i> Done</button>
+            
+        </div>
+    </div>
+     
+    </div>
+  </div>
+</div>
+<div class="modal  fade" id="addmenu" tabindex="-1" role="dialog" aria-labelledby="addmenu">
+  <div class="modal-dialog modal-dialog-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add Menu</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="closepop">&times;</span>
+        </button>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <form action="" class="form-horizontal ng-untouched ng-pristine ng-valid" enctype="multipart/form-data" method="post" novalidate="">
+              
+              <div class="form-group row">
+                  <label class="col-md-3 col-form-label" for="country code">Menu Name:</label>
+                  <div class="col-md-9"><input class="form-control form-control-sm" id="text-input" name="country code" placeholder="" type="text" /></div>
+             
+            
+              </div>
+           
+        
+             
+           
+            
+          </form>
+      </div>
+        <div class="card-footer">
+            <button class="btn btn-sm btn-primary pull-right" type="submit" (click)="alertWithSuccess()"><i class="fa fa-plus"></i> Add</button>
+            
+        </div>
+    </div>
+     
+    </div>
+  </div>
+</div>
+<div class="modal  fade" id="addlevel" tabindex="-1" role="dialog" aria-labelledby="addmenu">
+  <div class="modal-dialog modal-dialog-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add Level</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="closepop">&times;</span>
+        </button>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <form action="" class="form-horizontal ng-untouched ng-pristine ng-valid" enctype="multipart/form-data" method="post" novalidate="">
+              
+              <div class="form-group row">
+                  <label class="col-md-3 col-form-label" for="country code">Level Name:</label>
+                  <div class="col-md-9"><input class="form-control form-control-sm" id="text-input" name="country code" placeholder="" type="text" /></div>
+             
+            
+              </div>
+           
+        
+             
+           
+            
+          </form>
+      </div>
+        <div class="card-footer">
+            <button class="btn btn-sm btn-primary pull-right" type="submit" (click)="alertWithSuccess()"><i class="fa fa-floppy-o"></i> Save</button>
+            
+        </div>
+    </div>
+     
+    </div>
+  </div>
+</div>
+<div class="modal  fade" id="sublevel" tabindex="-1" role="dialog" aria-labelledby="addmenu">
+  <div class="modal-dialog modal-dialog-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Sub Level</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="closepop">&times;</span>
+        </button>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <form action="" class="form-horizontal ng-untouched ng-pristine ng-valid" enctype="multipart/form-data" method="post" novalidate="">
+              
+              <div class="form-group row">
+                  <label class="col-md-3 col-form-label" for="country code">Level Name:</label>
+                  <div class="col-md-9"><input class="form-control form-control-sm" id="text-input" name="country code" placeholder="" type="text" /></div>
+             
+            
+              </div>
+           
+        
+             
+           
+            
+          </form>
+      </div>
+        <div class="card-footer">
+            <button class="btn btn-sm btn-primary pull-right" type="submit" (click)="alertWithSuccess()"><i class="fa fa-floppy-o"></i> Save</button>
+            
+        </div>
+    </div>
+     
+    </div>
+  </div>
+</div>
+<div class="modal  fade" id="updatelevel" tabindex="-1" role="dialog" aria-labelledby="addmenu">
+  <div class="modal-dialog modal-dialog-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Update Level</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="closepop">&times;</span>
+        </button>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <form action="" class="form-horizontal ng-untouched ng-pristine ng-valid" enctype="multipart/form-data" method="post" novalidate="">
+              
+              <div class="form-group row">
+                  <label class="col-md-3 col-form-label" for="country code">Level Name:</label>
+                  <div class="col-md-9"><input class="form-control form-control-sm" id="text-input" name="country code" placeholder="" type="text" /></div>
+             
+            
+              </div>
+           
+        
+             
+           
+            
+          </form>
+      </div>
+        <div class="card-footer">
+            <button class="btn btn-sm btn-primary pull-right" type="submit" (click)="alertWithSuccess()"><i class="fa fa-pencil-square-o"></i> Update</button>
+            
+        </div>
+    </div>
+     
+    </div>
+  </div>
+</div>
