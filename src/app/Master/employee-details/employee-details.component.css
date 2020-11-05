@@ -1,0 +1,23 @@
+.boxpos{padding: 7px 0px 0px 20px;}
+.nomarginbtm{margin-bottom:0px !important}
+
+.usercrdbox{border:1px solid #cdcdcd;
+    padding: 5px;
+}
+
+.userimage{position: absolute;
+    right: 5px;}
+
+    .boxwidth{
+        width: 36%;
+        position: relative;
+    }
+    .card-footer {
+        padding: .75rem 1.25rem;
+     border-top: 1px solid; 
+        background-color: #fff;
+        border-color: #ffffff;
+        position: absolute;
+        bottom: 22px;
+        right: 0px;
+    }
