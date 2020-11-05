@@ -16,7 +16,7 @@ const routes: Routes = [
 {path: 'DefineRestaurant', loadChildren: './define-restaurant/define-restaurant.module#DefineRestaurantModule'},
 {path: 'Country', loadChildren: './country/country.module#CountryModule'},
 {path: 'State', loadChildren: './state/state.module#StateModule'},
-
+{path: 'EmployeeDetails', loadChildren: './employee-details/employee-details.module#EmployeeDetailsModule'},
 {path: 'Home', loadChildren: './home/home.module#HomeModule'},
 {path: 'SectionTable', loadChildren: './section-table/section-table.module#SectionTableModule'},
 {path: 'Company', loadChildren: './company/company.module#CompanyModule'},

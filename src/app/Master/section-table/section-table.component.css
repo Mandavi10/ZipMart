@@ -33,44 +33,45 @@
     cursor: pointer;
 }
 .headtblbox {
-    min-height: 75px !important;
-    max-height: 75px;
+    max-height: 50px;
     overflow: hidden;
 }
-.tblname{ background-color: #0a4c588c;
+.headtblbox h6{ line-height: 16px;
+    margin-bottom: 0px !important;}
+.tblname{ background-color: #abadaf8c;
     padding: 5px;
-    color: #fff;
+    color: #000;
+    font-size: 15px;
+    border: 1px solid #ccc8c8;
 }
 .sectionBox  img{width: 74%;
 }
 .carddiv{padding:10px}
 .sectionBox {
-    padding: 0px 2px 1px;
+    padding: 12px 12px;
     color: #000;
     border-radius: 2px;
     text-align: center;
-    width: 60px;
-    background: #9db6e40f;
+    background: #d7dbdc;
     float: left;
-    border: 1px solid #9db6e4;
-    margin: 4px;
-}
+    border: 1px solid #c7c8ca;
+    margin: 4px;}
 .menuList a {
     font-size: 13px;
     font-weight: bold;
     color: #11100F;
     margin-left: 5px;
 }
-.e-listbox-wrapper .e-list-item.e-selected{}
+
 .e-listbox-wrapper .e-list-item{
     display: inline-block;
     margin: 0;
     display: inline-block;
     margin: 3px;
-    /* padding: 19px; */
-    border: 1px solid #396e78;
+    border: 1px solid #c0c2c3;
     width: 15%;
-text-align: center;
+    text-align: center;
+    background: #f1f0f0;
 }
 .e-listbox-wrapper.e-list-item{
     display: inline-block;
