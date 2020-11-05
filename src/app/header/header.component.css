@@ -1,8 +1,12 @@
-.logo{ font-family: "Segoe UI";
-    font-size: 31px;
-    font-weight: 600;
+.logo{
     color: #22519e;
     width: 200px;
     text-align: center;}
+    .logo img{width:60%}
 .userName{ color: #303c54;
     font-size: 13px;}
+.c-sidebar-brand {
+        display: flex;
+        flex: 0 0 40px !important;}
+        .c-header-nav {
+            min-height: 40px !important;}

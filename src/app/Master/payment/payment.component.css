@@ -1,0 +1,375 @@
+.homeContainer{width:100%!important;}
+#ddlpytmcupon, #ddlpytmBooklet {
+    width:100%;
+    height: 24px;
+    padding-left: 5px;
+    }
+    .tblbillch thead {
+        background: #90aaad !important;
+        width: 100%;
+        display: block;
+    }
+    .tblbillch td{
+    border: 1px solid #dddddd;
+    text-align: left !important;
+    padding: 4px 25px 3px 8px !important;
+    width: 100%;
+} 
+     .tblbillch th {
+    border: 1px solid #dddddd;
+    text-align: left !important;
+    padding: 4px 25px 3px 8px !important;
+    width: 100%;
+}
+    #billhistorytbl tbody {
+        overflow: auto;
+        display: block;
+        max-height: 14vh;
+    }
+
+        #billhistorytbl tbody tr {
+            width: 100%;
+            display: table;
+            table-layout: fixed;
+        }
+
+
+    #billhistorytbl thead tr {
+        width: 100%;
+        display: table;
+        table-layout: fixed;
+    }
+
+
+
+
+
+    #tblrunningord {
+        min-height: 345px;
+    }
+
+    tr.strikeout td:before {
+        content: " ";
+        position: absolute;
+        display: inline-block;
+        padding: 5px 10px;
+        left: 15px;
+        border-bottom: 1px solid #111;
+        width: 96%;
+    }
+
+
+    .disable {
+        opacity: 0.4;
+        pointer-events: none;
+    }
+
+        .disable div,
+        .disable textarea {
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+    #mainContent {
+        max-width: 100%;
+        flex: 100%;
+    }
+
+    #navContent {
+        display: none;
+    }
+
+    h5.pageTitle {
+        color: #183d44;
+        font-weight: bold;
+        border-bottom: 1px solid #9eb1b5;
+        padding-bottom: 2px;
+        padding-top: 0px;
+    }
+
+    h5 {
+        margin-bottom: 0px !important;
+    }
+
+    .pageHead {
+        overflow: hidden;
+        margin-bottom: 4px !important;
+    }
+
+    #tblrunningord tbody {
+        overflow: auto;
+        display: block;
+        max-height: 51vh;
+    }
+
+        #tblrunningord tbody tr {
+            width: 100%;
+            display: table;
+            table-layout: fixed;
+        }
+
+
+    #tblrunningord thead tr {
+        width: 100%;
+        display: table;
+        table-layout: fixed;
+    }
+
+    .MenuBox {
+        padding: 11px 2px 1px;
+        color: #ffffff;
+        border-radius: 2px;
+        text-align: center;
+        width: 99%;
+        height: 43px;
+        background: #3c5a61;
+        float: left;
+        border: 1px solid #a6b6b9;
+        margin: 4px;
+    }
+
+        .MenuBox.active, .MenuBox.fc-selected {
+            background: #cfd8da !important;
+            color: #000;
+            border: 1px solid #3c5a61;
+        }
+.menuList{    position: absolute;
+    left: 17px;
+    z-index: 999;}
+    .menuList label{font-weight:600}
+    #totalcon label {
+        font-size: 14px !important;
+        font-weight: bold;
+    }
+
+    #totalcon {
+        padding-top: 5%;
+        background-color: #eaeaea;
+        border-radius: 4px;
+    }
+
+
+    .calsi {
+        padding: 11px 2px 1px;
+        color: #000000;
+        border-radius: 2px;
+        text-align: center;
+        width: 30%;
+        height: 43px;
+        background-color: #ffffff;
+        float: left;
+        border: 1px solid #8c8e8e;
+        margin: 4px;
+    }
+
+    .Difference {
+        padding: 11px 2px 1px;
+        color: #27444a;
+        border-radius: 2px;
+        text-align: center;
+        width: 46%;
+        height: 43px;
+        float: left;
+        border: 1px solid #a6b6b9;
+        margin: 4px;
+    }
+
+    .ManagerPrivilege {
+        padding: 11px 2px 1px;
+        color: #27444a;
+        border-radius: 2px;
+        text-align: center;
+        width: 47%;
+        height: 43px;
+        float: left;
+        border: 1px solid #a6b6b9;
+        margin: 4px;
+    }
+
+    .boxpaycolor {
+        background-color: #3c5a61;
+        color: #ffffff;
+    }
+
+    .boxpaycolor1 {
+        background-color: #90aaad;
+    }
+
+    .Difference1 {
+        padding: 11px 2px 1px;
+        color: #ffffff;
+        border-radius: 2px;
+        text-align: center;
+        width: 23%;
+        height: 43px;
+        float: left;
+        border: 1px solid #a6b6b9;
+        margin: 4px;
+    }
+
+    .boxpaycolor2 {
+        background-color: #90aaad;
+    }
+
+    .Difference2 {
+        padding: 11px 2px 1px;
+        color: #ffffff;
+        border-radius: 2px;
+        text-align: center;
+        width: 100%;
+        height: 43px;
+        float: left;
+        border: 1px solid #a6b6b9;
+        margin: 4px;
+    }
+
+    .active {
+        background: #94c8d2 !important;
+    }
+
+    #amendorder {
+        width: 100%;
+    }
+
+    #Itemtable tbody {
+        overflow: auto;
+        display: block;
+        max-height: 26vh;
+    }
+
+        #Itemtable tbody tr {
+            width: 100%;
+            display: table;
+            table-layout: fixed;
+        }
+
+
+    #Itemtable thead tr {
+        width: 100%;
+        display: table;
+        table-layout: fixed;
+    }
+
+
+    .width32 {
+        width: 32%;
+        display: inline-block;
+    }
+
+    .billscroll {
+        overflow-y: scroll;
+        height: 342px;
+    }
+
+    #Disproportionatepopup .modal-dialog, #Disproportionatepopup .modal-body {
+        padding: 1px 24px 16px;
+    }
+
+    .receiptdiv {
+        min-height: 360px;
+    }
+
+
+
+
+
+    #billtable tbody {
+        overflow: auto;
+        display: block;
+        max-height: 19vh;
+    }
+
+        #billtable tbody tr {
+            width: 100%;
+            display: table;
+            table-layout: fixed;
+        }
+
+
+    #billtable thead tr {
+        width: 100%;
+        display: table;
+        table-layout: fixed;
+    }
+
+    #proceeditem .modal-lg {
+        max-width: 90% !important;
+    }
+
+    .totalamount {
+        font-size: 16px !important;
+        font-weight: bold !important;
+    }
+
+    #splittable tbody {
+        overflow: auto;
+        display: block;
+        max-height: 26vh;
+    }
+
+        #splittable tbody tr {
+            width: 100%;
+            display: table;
+            table-layout: fixed;
+        }
+
+
+    #splittable thead tr {
+        width: 100%;
+        display: table;
+        table-layout: fixed;
+    }
+
+    .dropdown:after {
+        position: absolute;
+        content: '';
+        right: 16px;
+        top: 7px;
+        width: 0;
+        height: 0;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        border-top: 8px solid #948c8c;
+        z-index: 999;
+    }
+
+    .Disproportionate {
+        margin-left: 32px;
+    }
+
+    #Disproportionatepopup .modal-sm {
+        max-width: 550px;
+    }
+
+    .receiptbox {
+        border: 1px solid #cdcdcd;
+        width: 19%;
+        height: 109px;
+        margin-top: 1%;
+        display: inline-block;
+    }
+
+    .plbl {
+        background-color: #3c5a61;
+        padding: 0px 0px 7px 0px;
+        color: #ffffff;
+    }
+
+    #itemnamesplittable tr.strikeout td:before {
+    content: " ";
+    position: absolute;
+    display: inline-block;
+    padding: 5px 10px;
+    left: 15px;
+    border-bottom: 1px solid #111;
+    width: 92%;
+}
+    #itemnamesplittable tbody tr:nth-child(even) {
+    background-color: #d7dfe0;
+}
+.amountTxt input[type="text"]{padding-left:30px}
+.amountTxt img{ position: absolute;
+    right: 22px;
+    top: 5px;
+    font-size: 20px;
+    font-weight: 400 !important;}
