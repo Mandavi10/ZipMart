@@ -56,7 +56,7 @@ p, label {
     border: 0px;
     background: transparent;}
 .btnAnimate i{ font-size:22px; color:#7f7c7c}
-.topBreadcrum{padding: 18px 0px 0px 60px !important}
+.topBreadcrum{padding: 12px 0px 0px 60px !important}
 .close{opacity:0.7 !important}
 
 .closepop{color: #000000;
@@ -138,6 +138,7 @@ p, label {
 
 span.c-sidebar-nav-icon{margin-top:-10px}
 .help-block{color:#dc4545}
+.c-header{ min-height: 40px !important;}
 .c-sidebar-nav-title {
      margin-top: 0px !important;}
 button{margin-right: 5px !important;}
@@ -145,7 +146,8 @@ button{margin-right: 5px !important;}
 .card {
     border: 0px solid !important;}
 .card-header {
-    padding: .5rem 1rem !important;}
+    padding: .5rem 1rem !important;
+    border-color: #dedfe2 !important}
 .heading{ font-size: 18px;
     font-weight: 600;
     color: #000000;
