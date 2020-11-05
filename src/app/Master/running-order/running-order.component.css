@@ -1,0 +1,22 @@
+.runningbox{width: 30%;
+    text-align: center;
+    border: 1px solid #cdcdcd;
+    border-radius: 2px;
+    display: inline-block;
+    margin-left: 3px;
+}
+
+.blbspace{border-top:1px solid #cdcdcd;padding: 3px 0px 0px 0px;background: #ececec;}
+.secondlblspace{padding-left: 9px;}
+.ordernocrdbox{padding: 14px 0px 12px 0px;}
+.btnheight{height:50px !important;}
+.righttopbox{border: 1px solid #cdcdcd;
+   border-radius:3px;
+}
+.leftpadding{padding:5px 0px 0px 5px}
+.backcolor{background: #ececec;padding: 2px 0px 0px 5px;}
+.form-group {
+    margin-bottom: 0px !important;
+}
+
+.borderright{border-right:1px solid #ececec;}
