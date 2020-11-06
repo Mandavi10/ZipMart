@@ -8,7 +8,7 @@ import Swal from 'sweetalert2/dist/sweetalert2.js';
 export class AddonComponent implements OnInit {
   name = 'Angular';
      simpleAlert(){
-       Swal.fire('Hello world!');
+       Swal.fire('Please Select Item First!');
      }
      
      alertWithSuccess(){

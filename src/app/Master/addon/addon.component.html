@@ -54,7 +54,7 @@
        </div>
        <div class="col-md-12 btnexit">
         <div class="btnCon">
-          <button class="btn btn-sm btn-primary btn-main" type="button" ><i class="fa fa-angle-double-right pr-1" title="Procced"></i></button>
+          <button class="btn btn-sm btn-primary btn-main" type="button"  (click)=simpleAlert()><i class="fa fa-angle-double-right pr-1" title="Procced"></i></button>
        
       </div>
       </div>
@@ -94,7 +94,7 @@
        </div>
        <div class="col-md-12 btnexit">
         <div class="btnCon">
-          <button class="btn btn-sm btn-primary btn-main" type="button" ><i class="fa fa-plus pr-1" title="Add"></i></button>
+          <button class="btn btn-sm btn-primary btn-main" type="button"  data-toggle="modal" data-target="#addon" ><i class="fa fa-plus pr-1" title="Add"></i></button>
           <button class="btn btn-sm btn-primary btn-main" type="button"  (click)="confirmBox()"><i class="fa fa-trash pr-1" title="Delete"></i></button>
         <button class="btn btn-sm btn-primary btn-main" type="button" >
           <i class="fa fa-sign-out" aria-hidden="true" title="Exit">
@@ -299,6 +299,49 @@
       </div>
         <div class="card-footer">
             <button class="btn btn-sm btn-primary pull-right" type="submit" (click)="alertWithSuccess()"><i class="fa fa-pencil-square-o"></i> Update</button>
+            
+        </div>
+    </div>
+     
+    </div>
+  </div>
+</div>
+
+
+<div class="modal  fade" id="addon" tabindex="-1" role="dialog" aria-labelledby="addmenu">
+  <div class="modal-dialog modal-dialog-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add Ons</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="closepop">&times;</span>
+        </button>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <form action="" class="form-horizontal ng-untouched ng-pristine ng-valid" enctype="multipart/form-data" method="post" novalidate="">
+              
+              <div class="form-group row">
+                  <label class="col-md-3 col-form-label" for="country code">Code:</label>
+                  <div class="col-md-9"><input class="form-control form-control-sm" id="text-input" name="country code" placeholder="" type="text" /></div>
+             
+            
+              </div>
+              <div class="form-group row">
+                <label class="col-md-3 col-form-label" for="country code">Name:</label>
+                <div class="col-md-9"><input class="form-control form-control-sm" id="text-input" name="country code" placeholder="" type="text" /></div>
+           
+          
+            </div>
+           
+        
+             
+           
+            
+          </form>
+      </div>
+        <div class="card-footer">
+            <button class="btn btn-sm btn-primary pull-right" type="submit" ><i class="fa fa-plus"></i> Add</button>
             
         </div>
     </div>
