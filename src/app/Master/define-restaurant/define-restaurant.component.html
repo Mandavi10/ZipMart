@@ -13,9 +13,9 @@
         </div>
       </div>
     
-      <div class="row boxpos" style="display:none;">
+      <div class="row boxpos" *ngIf="isShown">
         <div class="col-md-4 col-sm-6 col-6">
-           <div class="masterTabs dvdefineRestro ">
+           <div class="masterTabs dvdefineRestro " (click)="toggleShow()" >
             
                <img src="assets/images/create-icon.png" />
                <p>CREATE</p> 
@@ -42,8 +42,8 @@
         
 
 
-          <div>
-               <div class="">
+          <div *ngIf="isShown1">
+               <div class="" >
                   <div  class="col-md-6 subheading heading"> Sitting Section
 
                   </div>
@@ -75,7 +75,7 @@
                         <div class="col-md-12 col-sm-6 col-6 pl-0"> 
 
                       <div class="boxposiright p-0 ml-1">
-                        <div class="boxtextcenter">
+                        <div class="boxtextcenter" >
                          
                            
                             <p class="p-padding">Family section </p> 
@@ -102,13 +102,13 @@
 
 
 
-<div>
-                       <div class="" style="display:none;">
+<div *ngIf="isShownnew">
+                       <div class="" >
                           <div  class="col-md-6 subheading heading"> Table Creation
         
                           </div>
                         </div>
-                       <div class="row mt-1" style="display:none;"> 
+                       <div class="row mt-1" > 
                           
                            <div class="col-md-6 col-sm-6 col-6 padding-left">
         
@@ -169,13 +169,13 @@
 
 
 
-<div>
-                               <div class="" style="display:none;">
+<div *ngIf="isShownx">
+                               <div class="" >
                                   <div  class="col-md-6 subheading heading"> Kitchen Section 
                 
                                   </div>
                                 </div>
-                               <div class="row mt-1" style="display:none;"> 
+                               <div class="row mt-1" > 
                                   
                                    <div class="col-md-6 col-sm-6 col-6 padding-left">
                 
@@ -229,12 +229,13 @@
 
 
     
-                       <div class="card-footer" style="display:none;">
+                       <div class="card-footer" style="display:block;" *ngIf="isShownt" >
                         <button class="btn btn-sm btn-primary" type="submit"><i class="fa fa-angle-left"></i> Back</button>
-                        <button class="btn btn-sm btn-primary" type="submit" style="display:none;"> Next<i class="fa fa-angle-right"></i></button>
-                        <button class="btn btn-sm btn-primary" type="submit"><i class="fa fa-hourglass"></i> Finish</button>
+                        <button class="btn btn-sm btn-primary" type="submit"  (click)="toggleShow1()"  *ngIf="isShownk"> Next<i class="fa fa-angle-right"></i></button>
+                        <button class="btn btn-sm btn-primary" type="submit"  (click)="toggleShow4()" *ngIf="isShownm"> Next<i class="fa fa-angle-right"></i></button>
+                        <button class="btn btn-sm btn-primary" type="submit" *ngIf="isShowng" ><i class="fa fa-hourglass"></i> Finish</button>
                         <button class="btn btn-sm btn-primary" type="submit"><i class="fa fa-times"></i> Cancel</button>
-                       
+                     
                     </div>
 
 </div>
