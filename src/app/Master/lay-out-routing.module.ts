@@ -15,6 +15,8 @@ const routes: Routes = [
 {path: 'Location', loadChildren: './location/location.module#LocationModule'},
 {path: 'DefineRestaurant', loadChildren: './define-restaurant/define-restaurant.module#DefineRestaurantModule'},
 {path: 'Country', loadChildren: './country/country.module#CountryModule'},
+
+{path: 'RunningOrder', loadChildren: './running-order/running-order.module#RunningOrderModule'},
 {path: 'State', loadChildren: './state/state.module#StateModule'},
 {path: 'EmployeeDetails', loadChildren: './employee-details/employee-details.module#EmployeeDetailsModule'},
 {path: 'Home', loadChildren: './home/home.module#HomeModule'},
@@ -22,7 +24,9 @@ const routes: Routes = [
 {path: 'Company', loadChildren: './company/company.module#CompanyModule'},
 {path: 'MenuCreation', loadChildren: './menu-creation/menu-creation.module#MenuCreationModule'},
 {path: 'Addon', loadChildren: './addon/addon.module#AddonModule'},
+{path: 'KitchenSection', loadChildren: './kitchen-section/kitchen-section.module#KitchenSectionModule'},
 {path: 'Payment', loadChildren: './payment/payment.module#PaymentModule'},
+
 
 
         ]
