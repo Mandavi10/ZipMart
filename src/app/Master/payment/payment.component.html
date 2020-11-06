@@ -1,0 +1,340 @@
+<div class="app-body">
+  
+  <main class="homeContainer">
+
+ 
+  <div class="container-fluid p-0">
+    <div class="card">
+      <div class="card-header">
+        <div class="row">
+          
+        <div class="col-md-6 heading">Payment</div>
+      
+        </div>
+      </div>
+<div class="card-body">
+  
+    <div class="pageHead">
+         <div class="menuList">
+            <label>Order Number:<span id="lblorderNo">12345</span></label>
+        </div>
+    </div>
+
+
+    <div class="card" id="empDetails">
+        <div class="card-body " style="height: 521px;">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="mt-2 grdmrg" id="tblrunningord">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th style="width: 60%;">Item Name</th>
+                                    <th>Qty</th>
+                                    <th>Price</th>
+                                    <th>Tax</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                        <td>Kerala Prawn Soup</td>
+                                        <td>1.00</td>
+                                        <td>28.000</td>
+
+                                    </tr>
+
+
+
+                            </tbody>
+
+
+                        </table>
+                    </div>
+                  
+
+
+                <div class="row mt-2">
+                    <!-- <div class="col-md-7">
+                        <div class="pageHead">
+                            <h5 class="pageTitle">Payment Summary</h5>
+
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-md-6">
+                                <label class="col-md-6 fontBold pl-0 mb-0">STC Pay:</label>
+                                <label class="col-md-5 mb-0" id="lblstcpay">0</label>
+                                <label class="col-md-6 fontBold pl-0 mb-0">H Station Debit:</label>
+                                <label class="col-md-5 mb-0" id="lblstationdebit">0</label>
+                                <label class="col-md-6 fontBold pl-0 mb-0">On Offer:</label>
+                                <label class="col-md-5 mb-0" id="lbloffer">0</label>
+                                <label class="col-md-6 fontBold pl-0 mb-0">Hospitality:</label>
+                                <label class="col-md-5 mb-0" id="lblhospitality">0</label>
+                                <label class="col-md-6 fontBold pl-0 mb-0">Emp Credit:</label>
+                                <label class="col-md-5 mb-0" id="lblempcredit">0</label>
+                                <label class="col-md-6 fontBold pl-0 mb-0">Cust Credit:</label>
+                                <label class="col-md-5 mb-0" id="lblcustcredit">0</label>
+                            </div>
+                            <div class="col-md-6">
+
+                                <label class="col-md-6 fontBold pl-0 mb-0">Cash:</label>
+                                <label class="col-md-5 mb-0" id="lblcash">0</label>
+                                <label class="col-md-6 fontBold pl-0 mb-0">Card:</label>
+                                <label class="col-md-5 mb-0" id="lblcard">0</label>
+                                <label class="col-md-6 fontBold pl-0 mb-0">Loyalty:</label>
+                                <label class="col-md-5 mb-0" id="lblloyality">0</label>
+                                <label class="col-md-6 fontBold pl-0 mb-0">Coupon:</label>
+                                <label class="col-md-5 mb-0" id="lblcoupan">0</label>
+                                <label class="col-md-6 fontBold pl-0 mb-0">H-Station Cash:</label>
+                                <label class="col-md-5 mb-0" id="lblstationcash">0</label>
+                                <label class="col-md-6 fontBold pl-0 mb-0">Chairman:</label>
+                                <label class="col-md-5 mb-0" id="lblchairman">0</label>
+
+                            </div>
+                        </div>
+
+
+                    </div> -->
+                    <div class="col-md-6">
+
+                    </div>
+                    <div class="col-md-6">
+
+
+                        <div class="row" id="totalcon">
+                            <div class="col-md-12 pl-0 pt-1">
+                                <label class="col-md-8 fontBold">VAT:</label>
+                                <label class="col-md-4 pull-right" id="txtvat"></label>
+
+                            </div>
+                            <div class="col-md-12 pl-0 pt-1">
+                                <label class="col-md-8 fontBold">Sub-Total:</label>
+                                <label class="col-md-4 pull-right" id="txtsubtotal"></label>
+
+                            </div>
+                            <div class="col-md-12 pl-0 pt-1">
+                                <label class="col-md-8 fontBold">Discount:</label>
+                                <label class="col-md-4 pull-right" id="txtdiscount">0</label>
+
+                            </div>
+                            <div class="col-md-12 pl-0 pt-1">
+                                <label class="col-md-8 fontBold">Total:</label>
+                                <label class="col-md-4 pull-right" id="txttotal"></label>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-8 pl-0">
+                        <div class="" id="divcalculator">
+                            <!-- <div class="row">
+                                <div class="col-md-12 pl-0 pt-1">
+                                    <label class="col-md-4 fontBold">Due:</label>
+                                    <input type="text" class="form-control col-md-8 pull-right" placeholder="Due" id="txtdue" />
+
+                                </div>
+                                <div class="col-md-12 pl-0 pt-1">
+                                    <label class="col-md-4 fontBold">Tendered:</label>
+                                    <input type="text" class="form-control col-md-8 pull-right" placeholder="Tendered" id="txttendered" />
+                                    <label id="lbltemptendered" style="display:none"></label>
+                                </div>
+                                <div class="col-md-12 pl-0 pt-1">
+                                    <label class="col-md-4 fontBold">Balance:</label>
+                                    <input type="text" class="form-control col-md-8 pull-right" placeholder="Balance" id="txtbalance" />
+
+                                </div>
+
+                            </div> -->
+                            
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                  <div class="amountTxt">
+                                  <input type="text" class="form-control" />
+                                  <img src="assets/images/cross.png"/>
+                                </div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12 p-0 rightdiv">
+                                        <div class="" id="destinationFields">
+                                            <div class="calsi" onclick="btnvalue(9,0);">
+                                                <h6>7</h6>
+                                            </div>
+                                            <div class="calsi " onclick="btnvalue(8,0);">
+
+                                                <h6>8</h6>
+                                            </div>
+                                            <div class="calsi " onclick="btnvalue(7,0);">
+                                                <h6>9</h6>
+                                            </div>
+                                            <div class="calsi " onclick="btnvalue(6,0);">
+                                                <h6>4</h6>
+                                            </div>
+                                            <div class="calsi " onclick="btnvalue(5,0);">
+
+                                                <h6>5</h6>
+                                            </div>
+                                            <div class="calsi " onclick="btnvalue(4,0);">
+                                                <h6>6</h6>
+                                            </div>
+                                            <div class="calsi " onclick="btnvalue(3,0);">
+                                                <h6>1</h6>
+                                            </div>
+                                            <div class="calsi " onclick="btnvalue(2,0);">
+
+                                                <h6>2</h6>
+                                            </div>
+                                            <div class="calsi " onclick="btnvalue(1,0);">
+                                                <h6>3</h6>
+                                            </div>
+                                            <div class="calsi " onclick="btnvalue(0,0);">
+                                                <h6>0</h6>
+                                            </div>
+                                            <div class="calsi " >
+
+                                                <h6>00</h6>
+                                            </div>
+                                            <div class="calsi " >
+
+                                              <h6>.</h6>
+                                          </div>
+                                            <div class="calsi " id="btncross">
+                                                <h6><i class="fa fa-angle-left" style="font-size: 18px;font-weight: bold;" aria-hidden="true"></i></h6>
+                                            </div>
+                                            <div class="calsi " onclick="btnvalue(10, 1);">
+                                                <h6>10</h6>
+                                            </div>
+                                            <div class="calsi" onclick="btnvalue(20, 1);">
+
+                                                <h6>20</h6>
+                                            </div>
+                                            <div class="calsi" onclick="btnvalue(50, 1);">
+                                                <h6>50</h6>
+                                            </div>
+                                            <div class="calsi" onclick="btnvalue(100, 1);">
+                                                <h6>100</h6>
+                                            </div>
+                                            <div class="calsi" onclick="btnvalue(500, 1);">
+
+                                                <h6>500</h6>
+                                            </div>
+                                            <div class="calsi" id="btnok">
+                                                <h6>OK</h6>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="" style="display:none">
+                            <div class="calsi boxpaycolor mt-3" id="btnprint">
+                                <h6>Print</h6>
+                            </div>
+                            <div class="calsi boxpaycolor mt-3" id="btnexact">
+
+                                <h6>Exact</h6>
+                            </div>
+                            <div class="calsi boxpaycolor mt-3" id="btnclear">
+                                <h6>Clear</h6>
+                            </div>
+                            <div class="Difference boxpaycolor" id="btndifference" data-toggle="modal" data-target="#difference">
+                                <h6>Difference</h6>
+                            </div>
+                            <div class="ManagerPrivilege boxpaycolor" id="btnmanagerprivilege">
+
+                                <h6>Manager Privilege</h6>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12 pl-0">
+                                <div class="col-md-12 col-sm-12 col-xs-12 p-0 rightdiv" style="display:none">
+                                    <div class="" id="destinationFields">
+                                        <div class="MenuBox" id="MenuBoxCash">
+
+
+                                            <h6>Cash</h6>
+                                        </div>
+                                        <div class="MenuBox" data-toggle="modal" data-target="#cardPayment" id="MenuBoxCard">
+
+                                            <h6>Card</h6>
+                                        </div>
+                                        <div class="MenuBox" data-toggle="modal" data-target="#loyaltyCard" id="MenuBoxLoyalty" >
+                                            <h6>Loyalty</h6>
+                                        </div>
+                                        <div class="MenuBox"  data-target="#coupondetails" id="MenuBoxCoupon" >
+                                            <h6>Coupon</h6>
+                                        </div>
+                                        <div class="MenuBox" data-toggle="modal" data-target="#stcpay" id="MenuBoxSTCPay" >
+                                            <h6>STC Pay</h6>
+
+                                        </div>
+                                        <div class="MenuBox" data-toggle="modal" data-target="#other" id="MenuBoxOther">
+                                            
+                                        <h6>Other</h6>
+                                    </div>
+                                    <div class="MenuBox" id="MenuBoxSplitBill">
+                                        <h6>Split Bill</h6>
+                                    </div>
+                                    <div class="MenuBox" id="MenuBoxCancel">
+
+
+                                        <h6>Cancel</h6>
+                                    </div>
+                                    <div class="MenuBox" id="MenuBoxConfirm">
+                                        <h6>Confirm</h6>
+                                    </div>
+                                    <div class="MenuBox" id="btnexit">
+
+
+                                        <h6>Exit</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+</div>
+
+</div>
+
+
+</div>
+
+    
+
+     
+   
+
+
+</div>
+    <div class="clearfix"></div>
+
+
+</div>
+</main>
+</div>
+
+
+
+

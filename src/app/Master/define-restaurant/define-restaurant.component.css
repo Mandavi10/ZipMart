@@ -6,6 +6,42 @@
     border-radius: 5px;
 }
 
+.boxposiright{display:inline-block;width: 20%;height: 79px;}
+.boxtextcenter{text-align:center;
+    border: 1px solid #cdcdcd;
+    border-radius: 2px;
+    
+}
+
+.restrohead{width: 120%;
+    margin-left: -9%;}
+.tablebox[_ngcontent-c7] {
+    display: inline-block;
+    width: 12%;
+    height: 52px;
+}
+
+.subheading{font-size:12px;}
+.padding-left{padding-left: 32px;}
+.active {
+    background: #c6cac6;
+}
+
+
+.leftcon{    background: #d3e2d3;
+    border-radius: 3px;
+    padding: 5px;
+    height: 412px;}
+.p-padding{padding-top: 12px;}
+.card-footer {
+    padding: .75rem 1.25rem;
+ border-top: 1px solid; 
+    background-color: #fff;
+    border-color: #ffffff;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
     .active{background: #d3e2d3;}
 
     .boxpos{margin: 0% auto;

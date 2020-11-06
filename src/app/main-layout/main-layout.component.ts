@@ -29,15 +29,19 @@ export class MainLayoutComponent implements OnInit {
       }
        if (router.url === '/SectionTable') {
         this.showSideNav = false;
+        this.showPOSNav = true;
 
       }
       if (router.url === '/MenuCreation') {
         this.showSideNav = false;
+        this.showPOSNav = true;
       }
 
-      
-      
         if (router.url === '/DefineRestaurant') {
+          this.showSideNav = false;
+          this.showPOSNav = true;
+        }
+        if (router.url === '/EmployeeDetails') {
           this.showSideNav = false;
           this.showPOSNav = true;
         }
@@ -51,6 +55,15 @@ export class MainLayoutComponent implements OnInit {
           this.showPOSNav = true;
         }
 
+        if (router.url === '/Payment') {
+          this.showSideNav = false;
+          this.showPOSNav = false;
+        }
+        if (router.url === '/RunningOrder') {
+          this.showSideNav = false;
+          this.showPOSNav = true;
+
+        }
     });
   }
 
