@@ -367,7 +367,7 @@
     #itemnamesplittable tbody tr:nth-child(even) {
     background-color: #d7dfe0;
 }
-.amountTxt input[type="text"]{padding-left:30px}
+.amountTxt input[type="text"]{padding-right:30px}
 .amountTxt img{ position: absolute;
     right: 22px;
     top: 5px;
