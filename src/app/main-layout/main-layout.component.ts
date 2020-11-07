@@ -61,7 +61,7 @@ export class MainLayoutComponent implements OnInit {
         }
         if (router.url === '/RunningOrder') {
           this.showSideNav = false;
-          this.showPOSNav = true;
+          this.showPOSNav = false;
 
         }
     });

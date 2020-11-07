@@ -5,6 +5,23 @@
     display: inline-block;
     margin-left: 3px;
 }
+.homeContainer {
+    position: absolute;
+    left: 0;
+    width: 99% !important;
+    top: 60px;
+    height: auto;
+    margin: 5px 7px !important;
+    background: #fff;
+}
+
+.btn-main {
+    background-color: #68a9b1 !important;
+    border-color: #68a9b1 !important;
+    color: #ffffff !important;
+    margin-top: 5px;
+    padding: .2rem .4rem !important;
+}
 
 .blbspace{border-top:1px solid #cdcdcd;padding: 3px 0px 0px 0px;background: #ececec;}
 .secondlblspace{padding-left: 9px;}
