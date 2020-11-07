@@ -15,7 +15,7 @@ const routes: Routes = [
 {path: 'Location', loadChildren: './location/location.module#LocationModule'},
 {path: 'DefineRestaurant', loadChildren: './define-restaurant/define-restaurant.module#DefineRestaurantModule'},
 {path: 'Country', loadChildren: './country/country.module#CountryModule'},
-
+{path: 'NewOrder', loadChildren: './new-order/new-order.module#NewOrderModule'},
 {path: 'RunningOrder', loadChildren: './running-order/running-order.module#RunningOrderModule'},
 {path: 'State', loadChildren: './state/state.module#StateModule'},
 {path: 'EmployeeDetails', loadChildren: './employee-details/employee-details.module#EmployeeDetailsModule'},
