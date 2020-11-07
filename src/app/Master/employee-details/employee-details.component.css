@@ -16,15 +16,17 @@
             padding-top: 7px;
     }
 
-
+    .mainLogo {
+        min-height: 0px !important;
+    }
     .mainLogo{overflow-y: auto;
-        height: 509px;}
+        height: 480px;}
     .card-footer {
         padding: .75rem 1.25rem;
      border-top: 1px solid; 
      background-color: #fff0;
      border-color: #ffffff00;
         position: absolute;
-        bottom: 22px;
+        bottom: -7px;
         right: 0px;
     }
