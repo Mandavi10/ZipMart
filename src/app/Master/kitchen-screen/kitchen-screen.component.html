@@ -1,0 +1,155 @@
+<div class="app-body">
+  
+  <main class="homeContainer">
+<div class="animated fadeIn ">
+ 
+  <div class="container-fluid p-0">
+    <div class="card">
+      <div class="card-header">
+        <div class="row">
+          
+        <div class="col-md-6 heading">Kitchen Screen</div>
+       
+        </div>
+      </div>
+      <div class="col-md-12 userbox">
+<div class="col-md-12 row">
+        <div class="box" data-toggle="modal" data-target="#addmenu" >
+          <div class="form-group  nomarginbtm classcolor">
+            <div class= " col-md-12 row fontcolor">
+            <label class="col-md-5 col-form-label">KOT No.:</label>
+            <div class="col-md-7"><label class="form-control-static lbltxt">2</label></div>
+        </div>
+          </div>
+       
+      <div class="form-group  nomarginbtm">
+        <div class= " col-md-12 row">
+        <label class="col-md-5 col-form-label">Order No:</label>
+        <div class="col-md-7"><label class="form-control-static lbltxt">BDON-00439</label></div>
+    </div>
+      </div>
+    <div class="form-group  nomarginbtm">
+      <div class= " col-md-12 row">
+      <label class="col-md-5 col-form-label">Time:</label>
+      <div class="col-md-7"><label class="form-control-static lbltxt">3:48 PM</label></div>
+  </div>
+    </div>
+  <div class="form-group  nomarginbtm">
+    <div class= " col-md-12 row">
+    <label class="col-md-5 col-form-label">Walter Name:</label>
+    <div class="col-md-7"><label class="form-control-static lbltxt">---</label></div>
+</div>
+  </div>
+<div class="form-group  nomarginbtm">
+  <div class= " col-md-12 row">
+  <label class="col-md-5 col-form-label ">Table:</label>
+  <div class="col-md-7"><label class="form-control-static lbltxt">T19</label></div>
+</div>
+</div>
+
+        </div>
+        <div class="box" data-toggle="modal" data-target="#addmenu" >
+          <div class="form-group  nomarginbtm classcolor">
+            <div class= " col-md-12 row fontcolor">
+            <label class="col-md-5 col-form-label">KOT No.:</label>
+            <div class="col-md-7"><label class="form-control-static lbltxt">2</label></div>
+        </div>
+          </div>
+       
+      <div class="form-group  nomarginbtm">
+        <div class= " col-md-12 row">
+        <label class="col-md-5 col-form-label">Order No:</label>
+        <div class="col-md-7"><label class="form-control-static lbltxt">BDON-00439</label></div>
+    </div>
+      </div>
+    <div class="form-group  nomarginbtm">
+      <div class= " col-md-12 row">
+      <label class="col-md-5 col-form-label">Time:</label>
+      <div class="col-md-7"><label class="form-control-static lbltxt">3:48 PM</label></div>
+  </div>
+    </div>
+  <div class="form-group  nomarginbtm">
+    <div class= " col-md-12 row">
+    <label class="col-md-5 col-form-label">Walter Name:</label>
+    <div class="col-md-7"><label class="form-control-static lbltxt">---</label></div>
+</div>
+  </div>
+<div class="form-group  nomarginbtm">
+  <div class= " col-md-12 row">
+  <label class="col-md-5 col-form-label ">Table:</label>
+  <div class="col-md-7"><label class="form-control-static lbltxt">T19</label></div>
+</div>
+</div>
+
+        </div>
+        </div>
+      </div>
+    
+
+
+</div>
+
+<div class="card-footer">
+  <!-- <button class="btn btn-sm btn-primary" type="submit"><i class="fa fa-sign-out"></i>Exit</button> -->
+  <button class="btn btn-sm btn-primary btn-main" type="button" >
+    <i class="fa fa-sign-out" aria-hidden="true" title="Exit">
+  </i></button>
+
+</div>
+    <div class="clearfix"></div>
+</div>  
+
+</div>
+</main>
+</div>
+<div class="modal  fade" id="addmenu" tabindex="-1" role="dialog" aria-labelledby="addmenu">
+  <div class="modal-dialog modal-dialog-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Item</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="closepop">&times;</span>
+        </button>
+      </div>
+      <div class="card">
+        <div class="card-body">
+         
+
+          
+          <div class="col-md-12 classcolor p-0 ">
+           <div class="row">
+            <div class="col-md-5 pr-0">
+              <div class="form-group  nomarginbtm ">
+            <div class= " col-md-12 row fontcolor">
+            <label class="col-md-6 col-form-label">KOT No.:</label>
+            <div class="col-md-6"><label class="form-control-static lbltxt">2</label></div>
+        </div>
+          </div>
+            </div>
+            <div class="col-md-7">
+              <div class="form-group  nomarginbtm ">
+            <div class= " col-md-12 row fontcolor">
+            <label class="col-md-5 col-form-label">Order No.:</label>
+            <div class="col-md-7"><label class="form-control-static lbltxt">BDON-0368</label></div>
+        </div>
+          </div>
+            </div>
+          </div>
+        
+          <ag-grid-angular
+          style="width: 100%; height: 200px;"
+          class="ag-theme-alpine"
+          [rowData]="rowData1"
+          [columnDefs]="columnDefs1">
+      </ag-grid-angular>
+    </div>
+      </div>
+        <div class="card-footer">
+            <!-- <button class="btn btn-sm btn-primary pull-right" type="submit" (click)="alertWithSuccess()"><i class="fa fa-plus"></i> Add</button> -->
+            
+        </div>
+    </div>
+     
+    </div>
+  </div>
+</div>

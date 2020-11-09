@@ -26,7 +26,7 @@ const routes: Routes = [
 {path: 'Addon', loadChildren: './addon/addon.module#AddonModule'},
 {path: 'KitchenSection', loadChildren: './kitchen-section/kitchen-section.module#KitchenSectionModule'},
 {path: 'Payment', loadChildren: './payment/payment.module#PaymentModule'},
-
+{path: 'KitchenScreen', loadChildren: './kitchen-screen/kitchen-screen.module#KitchenScreenModule'},
 
 
         ]

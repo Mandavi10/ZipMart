@@ -54,6 +54,10 @@ export class MainLayoutComponent implements OnInit {
           this.showSideNav = false;
           this.showPOSNav = true;
         }
+        if (router.url === '/KitchenScreen') {
+          this.showSideNav = false;
+          this.showPOSNav = false;
+        }
 
         if (router.url === '/Payment') {
           this.showSideNav = false;
