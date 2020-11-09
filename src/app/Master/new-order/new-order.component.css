@@ -51,3 +51,46 @@
         .card {
             height: 540px;
         }
+
+        
+
+
+  
+  .menuList {
+    font-size: 19px;
+    position: absolute;
+    right: 34px;
+    top: 4px;
+    cursor: pointer;
+}
+.headtblbox {
+    max-height: 50px;
+    overflow: hidden;
+}
+.headtblbox h6{ line-height: 16px;
+    margin-bottom: 0px !important;}
+.tblname{ background-color: #abadaf8c;
+    padding: 5px;
+    color: #000;
+    font-size: 15px;
+    border: 1px solid #ccc8c8;
+}
+.sectionBox  img{width: 74%;
+}
+.carddiv{padding:10px}
+.sectionBox {
+    padding: 12px 12px;
+    color: #000;
+    border-radius: 2px;
+    text-align: center;
+    background: #d7dbdc;
+    float: left;
+    border: 1px solid #c7c8ca;
+    margin: 4px;}
+.menuList a {
+    font-size: 13px;
+    font-weight: bold;
+    color: #11100F;
+    margin-left: 5px;
+}
+
