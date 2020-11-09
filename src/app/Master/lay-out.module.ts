@@ -14,7 +14,6 @@ import { LayOutRoutingModule } from './lay-out-routing.module';
 
 
 
-
 @NgModule({
   declarations: [MainLayoutComponent, HeaderComponent, SidebarComponent, FooterComponent, SidebarMinimizerComponent, PosSidebarComponent,],
 
