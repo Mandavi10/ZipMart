@@ -13,8 +13,8 @@
         </div>
       </div>
     
-      <div class="row boxpos" >
-        <div class="col-md-6 col-sm-6 col-6">
+      <div class="row boxpos" *ngIf="isShown">
+        <div class="col-md-6 col-sm-6 col-6" (click)="toggleShow()">
            <div class="masterTabs dvdefineRestro">
             
                <img src="assets/images/dine-in-icon.png" />
@@ -32,7 +32,9 @@
                 </div>
               
                </div>
-               <div class="row" style="display:none">
+
+
+               <div class="row" *ngIf="isShown1">
                <div class="col-md-12">
                 <div class="selectTable" id="divsittingsection">
                 
