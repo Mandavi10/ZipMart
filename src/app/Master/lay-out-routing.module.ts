@@ -10,7 +10,7 @@ const routes: Routes = [
 {path: 'Dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule'},
 {path: 'TestMaster', loadChildren: './test-master/test-master.module#TestMasterModule'},
 {path: 'City', loadChildren: './city/city.module#CityModule'},
-
+{path: 'TakeAway', loadChildren: './take-away/take-away.module#TakeAwayModule'},
 {path: 'Test', loadChildren: './test/test.module#TestModule'},
 {path: 'Location', loadChildren: './location/location.module#LocationModule'},
 {path: 'DefineRestaurant', loadChildren: './define-restaurant/define-restaurant.module#DefineRestaurantModule'},
