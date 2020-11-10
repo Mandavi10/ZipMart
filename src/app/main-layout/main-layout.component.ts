@@ -73,6 +73,11 @@ export class MainLayoutComponent implements OnInit {
           this.showPOSNav = true;
 
         }
+        if (router.url === '/TakeAway') {
+          this.showSideNav = false;
+          this.showPOSNav = false;
+
+        }
     });
   }
 
