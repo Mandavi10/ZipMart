@@ -154,14 +154,14 @@
         color: #000000;
         border-radius: 2px;
         text-align: center;
-        width: 30%;
+        width: 29.5%;
         height: 43px;
         background-color: #ffffff;
         float: left;
         border: 1px solid #8c8e8e;
         margin: 4px;
     }
-
+.operators .calsi{width:86%}
     .Difference {
         padding: 11px 2px 1px;
         color: #27444a;
@@ -373,3 +373,5 @@
     top: 5px;
     font-size: 20px;
     font-weight: 400 !important;}
+    #divcalculator{ height:515px}
+.bottomBtns{ position: absolute; width:100%; bottom:0px}

@@ -8,7 +8,6 @@ const routes: Routes = [
   { path: 'Login', component: LoginComponent },
    { path: '',component: MainLayoutComponent,children: [
 {path: 'Dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule'},
-{path: 'TestMaster', loadChildren: './test-master/test-master.module#TestMasterModule'},
 {path: 'City', loadChildren: './city/city.module#CityModule'},
 
 {path: 'Test', loadChildren: './test/test.module#TestModule'},
