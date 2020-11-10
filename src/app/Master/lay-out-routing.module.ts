@@ -28,6 +28,8 @@ const routes: Routes = [
 {path: 'Payment', loadChildren: './payment/payment.module#PaymentModule'},
 {path: 'KitchenScreen', loadChildren: './kitchen-screen/kitchen-screen.module#KitchenScreenModule'},
 
+{path: 'CustomerLoyalty', loadChildren: './customer-loyalty/customer-loyalty.module#CustomerLoyaltyModule'},
+{path: 'CustomerCoupon', loadChildren: './customer-coupon/customer-coupon.module#CustomerCouponModule'},
 
         ]
       }

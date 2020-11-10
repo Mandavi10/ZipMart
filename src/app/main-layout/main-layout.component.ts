@@ -58,6 +58,15 @@ export class MainLayoutComponent implements OnInit {
           this.showSideNav = false;
           this.showPOSNav = false;
         }
+        if (router.url === '/CustomerLoyalty') {
+          this.showSideNav = false;
+          this.showPOSNav = true;
+        }
+        if (router.url === '/CustomerCoupon') {
+          this.showSideNav = false;
+          this.showPOSNav = true;
+        }
+        
 
         if (router.url === '/Payment') {
           this.showSideNav = false;
